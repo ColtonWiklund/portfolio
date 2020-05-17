@@ -1,2 +1,4 @@
 name: Colton Wiklund - Portfolio
 markdown: kramdown
+
+theme: jekyll-theme-slate
