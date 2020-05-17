@@ -1,5 +1,5 @@
-### Colton Wiklund
-## Portfolio
+# Colton Wiklund
+### Portfolio
 
 This is sample text
 
