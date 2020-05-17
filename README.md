@@ -15,8 +15,9 @@ A Dota 2 Custom game written in Lua and published on the steam workshop. Players
 ## Creator
 A Unity project written in C# where the player creates simple structures that interact with the physics engine.
 
-- [Code Example 1](creator/FrameSegment.cs)
-- [Code Example 2](creator/FrameJoiner.cs)
+- [Code Example](Creator/Frame/FrameTool.cs.cs)
+- [Source](Creator)
+
 #### Overview
 ![Frame Tool](creator_1.jpg)
 > The Frame Tool is used to create a Frame Segment between two points in world space. Frame Segments will automatically connect to any adjacent Frame Segments to create a unified structure.
