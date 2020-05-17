@@ -23,7 +23,7 @@ A Unity project written in C# where the player creates simple structures that in
 > The Frame Tool is used to create a Frame Segment between two points in world space. Frame Segments will automatically connect to any adjacent Frame Segments to create a unified structure.
 
 ![Panel Tool](creator_2.jpg)
-> The Panel Tool is used to create Panels between Frame Segments. The player selects a vertex and any Panels that can be made will be indicated. Clicking an indicated Panel will build it.
+> The Panel Tool is used to create Panels between Frame Segments. The player selects a vertex and any Panels that can be made will be indicated. Clicking an indicator will build a Panel at that location.
 
 ![Structure](creator_3.jpg)
 > A basic structure made from the Frame and Panel Tools. The structure has a mass appriopriate for its size and can be interacted with through the physics engine.
