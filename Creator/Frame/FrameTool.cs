@@ -4,7 +4,7 @@ using UnityEngine;
 
 // Creates Frame Segments and Frame Joiners as specified by the player
 // Frame Segment: Connects two points in world space together with a rectangular prism
-// Fame Joiner: Placed on each end of a Frame Segment to indiciate where additional Frame segments can be connected
+// Frame Joiner: Placed on the end of each Frame Segment to indiciate where additional Frame segments can be connected
 
 namespace Player
 {
