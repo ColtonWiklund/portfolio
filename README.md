@@ -1,6 +1,5 @@
-## Colton Wiklund - Portfolio
-
-### Test Project 1
+### Colton Wiklund
+## Portfolio
 
 This is sample text
 
