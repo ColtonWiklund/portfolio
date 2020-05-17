@@ -15,7 +15,7 @@ A Dota 2 Custom game written in Lua and published on the steam workshop. Players
 ## Creator
 A Unity project written in C# where the player creates simple structures that interact with the physics engine.
 
-- [Code Example](Creator/Frame/FrameTool.cs.cs)
+- [Code Example](Creator/Frame/FrameTool.cs)
 - [Source](Creator)
 
 #### Overview
