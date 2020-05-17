@@ -18,4 +18,5 @@ A Unity project written in C# where the player creates simple structures that in
 - [Code Example 1](creator/FrameSegment.cs)
 - [Code Example 2](creator/FrameJoiner.cs)
 
-![Creator Overview]()
+![Creator Overview](creator_1.jpg)
+> The Frame Tool is used to create a Frame Segment between two points in world space. Frame Segments will automatically connect to any adjacent Frame Segments to create a unified strucutre.
