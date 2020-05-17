@@ -1,17 +1,20 @@
 # Colton Wiklund
 
 ## World of Warcraft: Reborn
-A theoretical version of World of Warcraft based on the original game.
+A theoretical version of World of Warcraft based on the original game. Contains updated abilities, talents, equipment, and a new system to promote player discovery.
 
--[Source](docs/CONTRIBUTING.md)
--[Website](https://www.worldofwarcraftreborn.com)
+- [Source](docs/CONTRIBUTING.md)
+- [Website](https://www.worldofwarcraftreborn.com)
 
-### Header 3
+## Hero Arena
+A Dota 2 Custom game written in Lua and published on the steam workshop.
 
-- Bullet
-- List
+- [Source](docs/CONTRIBUTING.md)
+- [Steam Page](https://www.worldofwarcraftreborn.com)
 
-1. Numbered
-2. List
+## Creator
+A Unity project where players create structures that interact with the physics engine.
 
-**Bold** and _Italic_ and 'Code' text
+- [Code Example 1](creator/FrameSegment.cs)
+- [Code Example 2](creator/FrameJoiner.cs)
+
