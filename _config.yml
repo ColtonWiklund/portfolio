@@ -1,1 +1,5 @@
 theme: jekyll-theme-slate
+
+#Jekyll Configuration
+name: Colton Wiklund - Portfolio
+url: "https://coltonwiklund.github.io"
