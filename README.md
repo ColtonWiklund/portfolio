@@ -10,7 +10,7 @@ A theoretical version of World of Warcraft based on the original game. Contains 
 A Dota 2 Custom game written in Lua and published on the steam workshop.
 
 - [Source](docs/CONTRIBUTING.md)
-- [Steam Page](https://www.worldofwarcraftreborn.com)
+- [Steam Page](https://steamcommunity.com/sharedfiles/filedetails/?id=821151547&searchtext=dota+2+arena+1v1)
 
 ## Creator
 A Unity project where players create structures that interact with the physics engine.
