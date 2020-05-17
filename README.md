@@ -18,4 +18,4 @@ A Unity project written in C# where the player creates simple structures that in
 - [Code Example 1](creator/FrameSegment.cs)
 - [Code Example 2](creator/FrameJoiner.cs)
 
-![Creator Overview](https://github.com/ColtonWiklund/coltonwiklund.github.io/blob/master/creator_overview.jpg)
+![Creator Overview]()
