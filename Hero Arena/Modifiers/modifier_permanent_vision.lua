@@ -1,0 +1,1 @@
+modifier_permanent_vision = class({})
