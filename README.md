@@ -7,7 +7,7 @@ A theoretical version of World of Warcraft based on the original game. Contains 
 - [Source](docs/CONTRIBUTING.md)
 
 ## Hero Arena
-A Dota 2 custom game written in Lua and published on the steam workshop. Players battle against the other team in a deathmatch arena, best of 5 rounds. Available in 1v1, 2v2, 3v3 gamemodes.
+A Dota 2 custom game written in Lua and published on the steam workshop. Players battle against the other team in a deathmatch arena.
 
 - [Steam Page](https://steamcommunity.com/sharedfiles/filedetails/?id=821151547&searchtext=dota+2+arena+1v1)
 - [Code Example](Hero%20Arena/game_controller.lua)
