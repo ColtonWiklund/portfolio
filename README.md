@@ -4,7 +4,8 @@
 A theoretical version of World of Warcraft based on the original game. Contains updated abilities, talents, equipment, and a new system to promote player discovery.
 
 - [Website](https://www.worldofwarcraftreborn.com)
-- [Source](docs/CONTRIBUTING.md)
+- [Code Example](Reborn/static/js/reborn.js)
+- [Source](Reborn)
 
 ## Hero Arena
 A Dota 2 custom game written in Lua and published on the steam workshop. Players battle against the other team in a deathmatch arena.
