@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159900419-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-159900419-1');
+		</script>
+
+		<title>World of Warcraft: Reborn</title>
+		<link rel="stylesheet" href="./static/css/talents.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		<div id="page_landing">
+			<div id="page_landing_embers"></div>
+			<div id="logo_banner">
+				<img id="reborn_logo" src="static/img/elements/reborn_logo.png">
+			</div>
+		</div>
+		<div class="divider_large_down"></div>
+		<div id="page_introduction">
+			<div id="page_introduction_content">
+				<div class="header"> WoW Classic, Continued </div>
+				<div class="underscore"></div>
+				<div class="subheader" style="max-width: 600px; margin: auto;"> Reborn is a theoretical version of World of Warcraft® based on the original game </div>
+			</div>
+		</div>
+		<div class="divider_large_down"></div>
+		<div id="page_rpg">
+			<div class="content_margin">
+				<div class="header"> The Essence of an RPG </div>
+				<div class="underscore"></div>
+				<div class="text"> Despite WoW Classic being nearly identical to the original, the game is played substantially different from how it was in 2004. The hardcore community has optimized every aspect of the game, and with it, indirectly forced this optimization on the casual community. Casual players do not feel free to play the classes they want with the equipment and talents they choose, instead following guides and tier lists as they are reluctant to make a character they know will be inferior. </div>
+				<div class="text"> The most dedicated players of any game will systematically examine every aspect of it, reducing it to numerical comparisons and rankings. If their findings are easily shared, the rest of the community becomes obligated to follow them, greatly reducing player autonomy as characters are expected to become carbon copies of the optimal builds. This is antithetical to role-playing games where characters are supposed to reflect the choices made by the player, and as such, this type of imitation undermines the genre. </div>
+				<div class="text"> This is the expected outcome of any challenge where the solution can be shared. Only a handful of players are required to "solve" a game for it to become solved for the community. Very few players have the opportunity to experience the game without this influence, as before they have the chance every aspect of the game is analyzed and the results are widely disseminated. </div>
+				<div class="text"> In the examples below, a player reaches the maximum level and develops their character based on the information available to them. In the first, players know only what they learn themselves, and in the second, players can access online resources. </div>
+				<ul class="list">
+					<li class="text list_item"> <b> Discovery: </b> The player has no knowledge of end-game content or the equipment it rewards. They join entry-level raids and begin to acquire a variety of equipment. They experiment with various talent and equipment builds, discovering which ones perform the best. Even if the player designs a build that performs well, they continue looking for ways they could improve it further. Through this experimentation, the player has a character that reflects their choices and is unique to them. As all characters are the result of a similar process, the likelihood of any two characters having identical equipment and talents is extremely low. </li>
+					<li class="text list_item"> <b> Imitation: </b> The player changes their talent points to the optimal raiding build they find online. The player consults the best-in-slot list for their class and learns what content they must complete to acquire these items. They are aware of the exact raids and bosses they must complete, down to the specific drop-rate of the equipment they want. As they progress through raids, the process is more similar to checking items off a to-do list than any sort of creative endeavor. At no point does the player need to consider why they're using the talents and equipment they are. When they are finished, they have a character that is functionally identically to all other characters of that class. The player has little incentive to keep playing as they know their character is the strongest it can be and cannot improve further. Any character that does not conform to the optimal build is seen as being a hindrance to their group and a handicap to the player. </li>
+				</ul>
+				<div class="text"> With the game rewarding high-performing characters with game progression, players are always inclined to build their characters optimally. Since there will always be a "best" way a character can be built, players will feel forced to conform to it. Even if online resources were limited, the underlying issue would still be present: with all players being given the same problem, it only needs to be solved once to become solved for everyone. To address this, a new system is introduced: The Dungeon Master. </div>
+			</div>
+		</div>
+		<div class="divider_large_down"></div>
+		<div id="page_dungeon_master">
+			<div class="content_margin">
+				<div class="header"> The Dungeon Master </div>
+				<div class="underscore"></div>
+				<div class="text"> The Dungeon Master's role in conventional tabletop role-playing games is to operate the world the player characters interact with. A byproduct of this, whether intentional or not, is that each world takes on characteristics from its Dungeon Master. If two Dungeon Masters were to operate the same campaign for the same group of players, the world of each Dungeon Master would be different. These differences may not directly change the storyline or end objective, but would manifest themselves in many areas, such as the characters the players interact with, the equipment they acquire, the layout of towns they visit, or unplanned encounters they have along the way. </div>
+				<div class="text"> Even if every group were to follow the same campaign, it would still be difficult to share useful information between groups due to each Dungeon Master providing a different experience. For most situations, players would be unable to consult outside information for how they should progress or build their characters as the details in their world are guaranteed to be unique. There may be commonalities, such as the base rules for the game, that players could consult community answers to guide them but ultimately the choices they make would have to take into account their own world. </div>
+				<div class="text"> The Dungeon Master's implementation in World of Warcraft follows a similar set of behaviors. Its end goal is to introduce a certain amount of variety into any system where players are inclined to optimize it. This variety is randomized at each server's instantiation and remains constant for the life of the server. With enough variables involved, each server would have a world that is entirely unique. Players would still be able to individually optimize their behavior, but the majority of their findings would only be applicable to their own server. This reduces the likelihood that a player will benefit from another player's discovery, as any published information is unlikely to apply to them. </div>
+				<div class="text"> The most significant system affected by the Dungeon Master is character equipment. Each item has an 'item level' that represents its strength. Item levels are used to determine how many attribute points an item has and the strength of the item's effect. Each item has three variables that are randomized at the server's instantiation: its base item level, attribute allocation, and the effect it has. As with all systems affected by the Dungeon Master, the variation in items is only seen between servers, with each server individually having consistent items. </div>
+				<ul class="list">
+					<li class="text list_item"> <b> Attribute Allocation: </b> Each item has a list of potential attributes. When the item is generated, its attributes are randomly selected from the list and assigned a random value. If the item has a unique effect, its value will occupy a set range. The sum of the attribute values and unique effect will be equivalent to the item level. In the example below, each percentage point allocated to the unique effect is worth 10 item levels. </li>
+					<div class="equipment_item artifact_equipment_mobile dungeon_master_equipment" id="attribute_allocation_item">
+						<div class="equipment_info">
+							<div>
+								<img src="static/img/icons/equipment/inv_shield_32.jpg" class="equipment_item_icon">
+							</div>
+							<div style="position: relative;">
+								<div class="item_level_text" id="attribute_allocation_item_level"> (item level 95) </div>
+								<div class="equipment_text equipment_item_name" style="font-size: 16px; color: #a435ee; width: 280px; margin-bottom: 3px"> Equipment Name </div>
+								<div class="equipment_text equipment_item_binding"> Binds when picked up </div>
+								<div class="equipment_text equipment_item_slot_armor_type_table">
+									<div class="equipment_text equipment_item_slot" style="width: 50%; text-align: left;"> Chest </div>
+									<div class="equipment_text equipment_item_armor_class" style="width: 50%; text-align: right;">  Plate </div>
+								</div>
+								<div class="equipment_text equipment_item_armor_value"> 824 Armor </div>
+								<div class="equipment_text equipment_item_weapon_table">
+									<div class="equipment_text equipment_item_weapon_damage" style="width: 50%; text-align: left;"> 111-222 Damage </div>
+									<div class="equipment_text equipment_item_weapon_speed" style="width: 50%; text-align: right;">  Speed 1.0 </div>
+								</div>
+								<div class="equipment_text equipment_item_attributes">
+								</div>
+								<div class="equipment_text equipment_item_class">
+									<span> Class: </span>
+									<span class="equipment_text equipment_item_class_name"> Class </span>
+								</div>
+								<div class="equipment_text equipment_item_effect" style="color: #1fff00;"> Effect: Increase your Attack Power by 24 for every 1,264 damage you take. Lasts 12 seconds. Maximum 5 stacks. Stacks refresh independently. </div>
+								<div class="equipment_item_selectability_section">
+									<br>
+									<div class="equipment_text equipment_item_selectability" style="color: #1fff00;"> [Shift-Click to Select Ability] </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="attribute_allocation_button_container" style="width: 100%; text-align: center;">
+						<button id="attribute_allocation_button" class="button_stylized button_stylized_small"> Generate </button>
+					</div>
+					<li class="text list_item"> <b> Equipment Strength: </b> An item level can vary, ranging between its base value and a moderate increase. The distribution of item levels should be relatively consistent, with no server, raid, or class having disproportionately higher or lower item levels than average. Item levels are not shown to players. </li>
+					<div class="equipment_item artifact_equipment_mobile dungeon_master_equipment" id="item_level_item">
+						<div class="equipment_info">
+							<div>
+								<img src="static/img/icons/equipment/inv_shield_32.jpg" class="equipment_item_icon">
+							</div>
+							<div style="position: relative;">
+								<div class="item_level_text" id="equipment_example_item_level"> (item level 95) </div>
+								<div class="equipment_text equipment_item_name" style="font-size: 16px; color: #a435ee; width: 280px; margin-bottom: 3px"> Equipment Name </div>
+								<div class="equipment_text equipment_item_binding"> Binds when picked up </div>
+								<div class="equipment_text equipment_item_slot_armor_type_table">
+									<div class="equipment_text equipment_item_slot" style="width: 50%; text-align: left;"> Chest </div>
+									<div class="equipment_text equipment_item_armor_class" style="width: 50%; text-align: right;">  Plate </div>
+								</div>
+								<div class="equipment_text equipment_item_armor_value"> 824 Armor </div>
+								<div class="equipment_text equipment_item_weapon_table">
+									<div class="equipment_text equipment_item_weapon_damage" style="width: 50%; text-align: left;"> 111-222 Damage </div>
+									<div class="equipment_text equipment_item_weapon_speed" style="width: 50%; text-align: right;">  Speed 1.0 </div>
+								</div>
+								<div class="equipment_text equipment_item_attributes">
+								</div>
+								<!-- <div class="equipment_text equipment_item_durability"> Durability 76/76 </div> -->
+								<div class="equipment_text equipment_item_class">
+									<span> Class: </span>
+									<span class="equipment_text equipment_item_class_name"> Class </span>
+								</div>
+								<div class="equipment_text equipment_item_effect" style="color: #1fff00;"> Effect: Increase your Attack Power by 24 for every 1,264 damage you take. Lasts 12 seconds. Maximum 5 stacks. Stacks refresh independently. </div>
+								<div class="equipment_item_selectability_section">
+									<br>
+									<div class="equipment_text equipment_item_selectability" style="color: #1fff00;"> [Shift-Click to Select Ability] </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="item_level_button_container" style="width: 100%; text-align: center;">
+						<button id="item_level_button" class="button_stylized button_stylized_small"> Generate </button>
+					</div>
+					<li class="text list_item"> <b> Effect Pooling: </b> High-level items do not have an effect by default. All item effects of a specific archetype (warrior, leather, rings, etc.) are pooled together. When an item is generated, an effect may be removed from the pool and assigned to that item. Items can be limited in what effects they can receive to ensure thematic consistency (ex. the effect for a "Spellshock Ring" should be related to spells). Each end-game item is not required to have an effect, however, all effects in the pool should be used to ensure consistency between servers. </li>
+					<div class="equipment_item artifact_equipment_mobile dungeon_master_equipment" id="effect_pooling_item">
+						<div class="equipment_info">
+							<div>
+								<img src="static/img/icons/equipment/inv_shield_32.jpg" class="equipment_item_icon">
+							</div>
+							<div style="position: relative;">
+								<div class="item_level_text" id="effect_pooling_item_level"> (item level 95) </div>
+								<div class="equipment_text equipment_item_name" style="font-size: 16px; color: #a435ee; width: 280px; margin-bottom: 3px"> Equipment Name </div>
+								<div class="equipment_text equipment_item_binding"> Binds when picked up </div>
+								<div class="equipment_text equipment_item_slot_armor_type_table">
+									<div class="equipment_text equipment_item_slot" style="width: 50%; text-align: left;"> Chest </div>
+									<div class="equipment_text equipment_item_armor_class" style="width: 50%; text-align: right;">  Plate </div>
+								</div>
+								<div class="equipment_text equipment_item_armor_value"> 824 Armor </div>
+								<div class="equipment_text equipment_item_weapon_table">
+									<div class="equipment_text equipment_item_weapon_damage" style="width: 50%; text-align: left;"> 111-222 Damage </div>
+									<div class="equipment_text equipment_item_weapon_speed" style="width: 50%; text-align: right;">  Speed 1.0 </div>
+								</div>
+								<div class="equipment_text equipment_item_attributes">
+								</div>
+								<!-- <div class="equipment_text equipment_item_durability"> Durability 76/76 </div> -->
+								<div class="equipment_text equipment_item_class">
+									<span> Class: </span>
+									<span class="equipment_text equipment_item_class_name"> Class </span>
+								</div>
+								<div class="equipment_text equipment_item_effect" style="color: #1fff00;"> Effect: Increase your Attack Power by 24 for every 1,264 damage you take. Lasts 12 seconds. Maximum 5 stacks. Stacks refresh independently. </div>
+								<div class="equipment_item_selectability_section">
+									<br>
+									<div class="equipment_text equipment_item_selectability" style="color: #1fff00;"> [Shift-Click to Select Ability] </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="effect_pooling_button_container" style="width: 100%; text-align: center;">
+						<button id="effect_pooling_button" class="button_stylized button_stylized_small"> Generate </button>
+					</div>
+				</ul>
+				<div class="text"> Through this equipment variation, the highest performing builds on each server are guaranteed to be unique. This variation cascades upward, reducing the prevalence of global metagames (ex. optimal arena teams or raid compositions), as players and guilds looking to reach their optimal performance are unlikely to achieve it through imitation. To further reduce the overlap between servers, the Dungeon Master should also be applied to the additional systems outlined below: </div>
+				<ul class="list">
+					<li class="text list_item"> <b> Boss Loot: </b> A boss's loot table may contain specific items that only it drops, but also have randomly selected items from its dungeon or raid. For example, a raid may have 80 unique items, 20 of which are assigned to specific bosses, but the remaining 60 are randomly assigned. As a result, players are only able to know what items drop from each boss by killing it themselves. </li>
+					<li class="text list_item"> <b> Spawn Locations: </b> The location of resources and unique high-value creatures are chosen from a set of locations. There may be multiple locations for each server, but these locations are a subset of all potential locations. For example, a rare creature may have 8 potential spawn locations but each server only uses 4-5. </li>
+					<li class="text list_item"> <b> Professions: </b> The strength of enchants, potions, gems, and other crafted items, as well as their reagents, can vary. This prevents there from being specific optimal recipes (ex. enchants, gems, etc) or a single optimal way to level each crafting profession. </li>
+					<li class="text list_item"> <b> Item Drops: </b> Rare items, such as quest starters or recipes, drop from different creatures, potentially in different zones or continents entirely. </li>
+					<li class="text list_item"> <b> Other: </b> The Dungeon Master could be applied to other systems not mentioned above. The more systems the Dungeon Master affects, the less able players will be to consult answers online. </li>
+				</ul>
+				<div class="text"> For each server to have a reliable online resource for best-in-slot equipment, talent builds, and guides, it would require the sustained effort of likely several dozen highly knowledgeable and skilled players from that server. As there are hundreds of severs, this would require regular contributions of thousands of players. Given that their target audience would likely only be their own server, a player's motivation for doing so would be limited. </div>
+				<div class="text"> The ideal outcome of these changes would be a game that is impossible to be solved by the community. Individuals may discover strong strategies and builds, but their findings are unlikely to be applicable to other servers. Players would be required to experiment with builds if they want to reach their character's maximum strength, and new players would have to undertake the same creative process as learning from other players' discoveries would be difficult.  </div>
+			</div>
+		</div>
+		<div class="divider_large_down"></div>
+		<div id="page_level_cap">
+			<div class="content_margin">
+				<div class="header"> The Level Cap </div>
+				<div class="underscore"></div>
+				<div class="text"> World of Warcraft's gameplay has always been separated into two distinct phases: leveling and end-game. While this simplifies the creation of new content and systems, it instills the idea in players that anything done before reaching the level cap is ultimately worthless. Most players today consider the leveling experience to be an extended tutorial, with the "real" game beginning upon reaching the maximum level. </div>
+				<div class="text"> Without the need to reset players' progress for each expansion, the very need to limit a player's level is questionable. The division between leveling and end-game content is largely a byproduct of the level cap, and would be improved without it. As such, Reborn is designed around the complete removal of the player level cap. Below are the most important systems and how they would operate with this change. </div>
+				<ul class ="list">
+					<li class="text list_item"> <b> Leveling: </b> Experience is gained from questing, dungeons, raids, battlegrounds, and world exploration. Content is slowly introduced based on the player's level, following the approximate outline: </li>
+					<ul class ="sub_list">
+						<li class="text list_item_narrow"> <b> 0-19: </b> Leveling is driven entirely by completing quests, slaying enemies, and world exploration. </li>
+						<li class="text list_item_narrow"> <b> 20-29: </b> Dungeons start to become available. </li>
+						<li class="text list_item_narrow"> <b> 30-44: </b> Battlegrounds and more complex dungeons start to become available. </li>
+						<li class="text list_item_narrow"> <b> 45-49: </b> Basic 10-man raids become available, introducing players to raid groups and mechanics. The amount of world quests begins to decline. </li>
+						<li class="text list_item_narrow"> <b> 50-59: </b> Larger and more complex raids are introduced. There are now limited world quests, with most quests focusing on dungeons and raids. </li>
+						<li class="text list_item_narrow"> <b> 60-69: </b> Leveling is driven primarily by raids. The rate at which new levels are gained starts to slow down substantially. Past level 60, all PvP content no longer provides experience. </li>
+						<li class="text list_item_narrow"> <b> 70+: </b> The player begins to approach the "soft cap" where the time required to achieve one level grows to several months or longer. </li>
+					</ul>
+					<li class="text list_item"> <b> Raids: </b> There should be several dozen raids, ranging from level 45 to 70+. Players should have a meaningful choice of what raids they want to complete, similar to choosing what zones they will quest in. Most raids would occupy the level 50-70 range, with a few low-level raids to introduce players to raiding, and a few high-level, extremely difficult raids for the most dedicated players. </li>
+					<li class="text list_item"> <b> Equipment: </b> Epic items should be designed and distributed such that they may retain their value into higher levels. For example, a level 70 player with all Epic items should have a combination of items from level 55-70 raids, instead of entirely level 70 items. This increases the value of Epic items as regardless of where it was acquired from, it may be the best-in-slot item for higher level builds. Players should not expect to replace Epic items due to them becoming strictly inferior later, but rather from finding items that better fit their specific build. </li>
+				</ul>
+				<div class="text"> With all content being interwoven, the distinction between leveling and end-game content should begin to fade. Players should feel they're on a continuous journey, instead of sequentially playing separate parts of the game. Players should not be forced to complete certain content in order to progress, instead following the path they set for themselves, allowing each character's journey to be unique. </div>
+			</div>
+		</div>
+		<div class="divider_large_down"></div>
+		<div id="page_classes">
+			<div class="content_margin">
+				<div class="header"> Classes </div>
+				<div class="underscore"></div>
+				<div class="text"> When the level cap is raised, players assume their characters will become stronger. This requires more talents and abilities that not only increase the health and damage of each class, but add entirely new capabilities they didn't have before. Due to the limited amount of ways each class can be made stronger, all classes start to become proficient in every domain. This effect compounds with each expansion, causing class identity to erode as capabilities that were previously unique to one class become commonplace. </div>
+				<div class="text"> Without the need to raise the level cap, the capabilities of each class could be strictly defined. Class power levels would never need to be increased, as the difficulty of any new content would not require power levels that weren't already obtainable. </div>
+				<div class="subheader text_left"> Reborn </div>
+				<ul class="list">
+					<li class="text list_item"> Talents provide the basic functionality of each specialization through passives and abilities, with further customization being provided by equipment. </li>
+					<li class="text list_item"> The talent system has 3 new hybrid sections that add talents to the specialization that unlocked them on a tier-by-tier basis. </li>
+					<li class="text list_item"> Talents become unlocked at level 15 with 1 Talent Point being rewarded for every level gained. Past level 60, a Talent Point is rewarded every 2 levels instead. </li>
+				</ul>
+			</div>
+		</div>
+		<div class="divider_small"></div>
+		<div id="page_talents">
+			<div id="talent_selector_intro">
+				<div id="class_selector_intro" class="no_select">
+					<img src="static/img/icons/class/icon_class_druid.png" class="class_icon_intro no_select" id="class_icon_intro_druid">
+					<img src="static/img/icons/class/icon_class_hunter.png" class="class_icon_intro no_select" id="class_icon_intro_hunter">
+					<img src="static/img/icons/class/icon_class_mage.png" class="class_icon_intro no_select" id="class_icon_intro_mage">
+					<img src="static/img/icons/class/icon_class_paladin.png" class="class_icon_intro no_select" id="class_icon_intro_paladin">
+					<img src="static/img/icons/class/icon_class_priest.png" class="class_icon_intro no_select" id="class_icon_intro_priest">
+					<img src="static/img/icons/class/icon_class_rogue.png" class="class_icon_intro no_select" id="class_icon_intro_rogue">
+					<img src="static/img/icons/class/icon_class_shaman.png" class="class_icon_intro no_select" id="class_icon_intro_shaman">
+					<img src="static/img/icons/class/icon_class_warlock.png" class="class_icon_intro no_select" id="class_icon_intro_warlock">
+					<img src="static/img/icons/class/icon_class_warrior.png" class="class_icon_intro no_select" id="class_icon_intro_warrior">
+				</div>
+				<div id="class_selector_intro_text"> Select Your Class </div>
+			</div>
+			<div id="talent_selector_reset">
+				<div id="talent_selector_reset_button_container" class="reset_button_hide">
+					<button id="talent_selector_reset_button" class="button_stylized"> Reset Talents </button>
+				</div>
+			</div>
+			<div id="talent_selector_columns">
+				<div id="talent_selector_left_column" class="talent_selector_column">
+					<div id="stats_panel_button_container">
+						<button id="stats_panel_button" class="button_stylized"> Class Info </button>
+					</div>
+					<div id="keywords_panel" class="stats_panel_hide">
+						<div class="class_info_text_header"> Keywords </div>
+						<div class="class_info_text"> Each specialization is designed around keywords that represent its capabilities and theme. </div>
+						<div class="class_info_text"> The more unique keywords a specialization has, the less one-dimensional it will be. </div>
+						<div id="class_info_spec_1" class="class_info_text_header"> Fury </div>
+						<div id="class_info_spec_1_items">
+						</div>
+						<div id="class_info_spec_2" class="class_info_text_header"> Arms </div>
+						<div id="class_info_spec_2_items"> 
+						</div>
+						<div id="class_info_spec_3" class="class_info_text_header"> Protection </div>
+						<div id="class_info_spec_3_items"> 
+						</div>
+					</div>
+					<div id="stats_panel" class="stats_panel_hide">
+						<div id="stats_health">
+							<br>
+							<div class="stats_number_display no_select">
+								<span>Health: </span>
+								<span id="stat_indicator_health">1</span>
+							</div>
+							<div class="slidecontainer">
+								<input type="range" min="0" max="100" value="50" class="slider" id="stats_slider_health">
+							</div>
+							<div class ="stats_labels no_select">
+								<div style="width:30%;">Base</div>
+								<div style="width:30%;">Poor</div>
+								<div style="width:30%;">Good</div>
+								<div style="width:10%;">Great</div>
+							</div>
+						</div>
+						<div id="stats_mana" style="display: none;">
+							<div class="stats_number_display no_select">
+								<span id="stats_resource_name">Mana: </span>
+								<span id="stat_indicator_mana">1</span>
+							</div>
+							<div class="slidecontainer">
+								<input type="range" min="0" max="100" value="50" class="slider" id="stats_slider_mana">
+							</div>
+							<div class="stats_labels no_select">
+								<div style="width:30%;">Base</div>
+								<div style="width:30%;">Poor</div>
+								<div style="width:30%;">Good</div>
+								<div style="width:10%;">Great</div>
+							</div>
+						</div>
+						<br class="no_select">
+						<hr class="stats_divider">
+						<div id="stats_attack_power" style="display: none;">
+							<div class="stats_number_display no_select">
+								<span>Attack Power: </span>
+								<span id="stat_indicator_attack_power">1</span>
+							</div>
+							<div class="slidecontainer">
+								<input type="range" min="0" max="100" value="50" class="slider" id="stats_slider_attack_power">
+							</div>
+							<div class ="stats_labels no_select">
+								<div style="width:30%;">Base</div>
+								<div style="width:30%;">Poor</div>
+								<div style="width:30%;">Good</div>
+								<div style="width:10%;">Great</div>
+							</div>
+						</div>
+						<div id="stats_spell_power" style="display: none;">
+							<div class="stats_number_display no_select">
+								<span>Spell Power: </span>
+								<span id="stat_indicator_spell_power">1</span>
+							</div>
+							<div class="slidecontainer">
+								<input type="range" min="0" max="100" value="50" class="slider" id="stats_slider_spell_power">
+							</div>
+							<div class ="stats_labels no_select">
+								<div style="width:30%;">Base</div>
+								<div style="width:30%;">Poor</div>
+								<div style="width:30%;">Good</div>
+								<div style="width:10%;">Great</div>
+							</div>
+						</div>
+						<br class="no_select">
+						<hr class="stats_divider">
+						<div id="stats_block_value">
+							<div class="stats_number_display no_select">
+								<span>Block Value: </span>
+								<span id="stat_indicator_block_value">1</span>
+							</div>
+							<div class="slidecontainer">
+								<input type="range" min="0" max="100" value="50" class="slider" id="stats_slider_block_value">
+							</div>
+							<div class ="stats_labels no_select">
+								<div style="width:30%;">Base</div>
+								<div style="width:30%;">Poor</div>
+								<div style="width:30%;">Good</div>
+								<div style="width:10%;">Great</div>
+							</div>
+						</div>
+						<div id="stats_armor">
+							<div class="stats_number_display no_select">
+								<span>Armor: </span>
+								<span id="stat_indicator_armor">1</span>
+							</div>
+							<div class="slidecontainer">
+								<input type="range" min="0" max="100" value="50" class="slider" id="stats_slider_armor">
+							</div>
+							<div class ="stats_labels no_select">
+								<div style="width:45%;">Poor</div>
+								<div style="width:45%;">Good</div>
+								<div style="width:10%;">Great</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="talent_selector_right_column" class="talent_selector_column">
+					<div id="abilities_button_container">
+						<button id="abilities_button" class="button_stylized"> Abilities </button>
+					</div>
+					<div id="ability_column" class="ability_column_hide">
+						<div class="ability" id="grid_ability">
+							<div style="width: 80px">
+								<div class="ability_text no_select" style="width: 100%; padding-top: 6px; font-size: 12px; color: #bfbfbf; text-align: center; padding-left: 0px; padding-right: 0px;">
+									Level
+								</div>
+								<div class="ability_text ability_level no_select" style="width: 100%; padding-top: 1px; font-size: 16px; text-align: center; padding-left: 0px; padding-right: 0px; padding-bottom: 10px;">
+									1
+								</div>
+								<div class="ability_icon ability_icon no_select">
+								</div>
+							</div>
+							<div style="width: 310px">
+								<div class="ability_text ability_name no_select"  style="width: 100%; padding-top: 6px; font-size: 14px;">
+									<span>Name of Ability</span>
+								</div>
+
+								<div class="grid_ability_columns_layout">
+									<div class="grid_ability_column_left" style="width: 62%;">
+										<div class="ability_text ability_resource no_select">
+											<span>Resource</span>
+										</div>
+										<div class="ability_text ability_cast_time no_select">
+											<span>Cast Time</span>
+										</div>
+									</div>
+									<div class="grid_ability_column_right" style="width: 38%;">
+										<div class="ability_text ability_range no_select" style="text-align: right;">
+											<span>Range</span>
+										</div>
+										<div class="ability_text ability_cooldown no_select" style="text-align: right;">
+											<span>Cooldown</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="ability_text ability_requires_1 no_select">
+									<span>Requires 1</span>
+								</div>
+								<div class="ability_text ability_requires_2 no_select">
+									<span>Requires 2</span>
+								</div>
+
+								<div class="ability_text ability_description no_select" style="padding-top: 3px; padding-bottom: 6px; color: #ffd100;">
+									<span>This is a description of an ability.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="talent_selector">
+				<div id="class_selector" class="no_select">
+					<img src="static/img/icons/class/icon_class_druid.png" class="class_icon no_select" id="class_icon_druid">
+					<img src="static/img/icons/class/icon_class_hunter.png" class="class_icon no_select" id="class_icon_hunter">
+					<img src="static/img/icons/class/icon_class_mage.png" class="class_icon no_select" id="class_icon_mage">
+					<img src="static/img/icons/class/icon_class_paladin.png" class="class_icon no_select" id="class_icon_paladin">
+					<img src="static/img/icons/class/icon_class_priest.png" class="class_icon no_select" id="class_icon_priest">
+					<img src="static/img/icons/class/icon_class_rogue.png" class="class_icon no_select" id="class_icon_rogue">
+					<img src="static/img/icons/class/icon_class_shaman.png" class="class_icon no_select" id="class_icon_shaman">
+					<img src="static/img/icons/class/icon_class_warlock.png" class="class_icon no_select" id="class_icon_warlock">
+					<img src="static/img/icons/class/icon_class_warrior.png" class="class_icon no_select" id="class_icon_warrior">
+				</div>
+				<div id="talents_section" style="position:relative;">
+					<div id="talents_spec_names"  style="position:relative;"></div>
+					<div id="talent_spec_points_display" style="position:absolute; top: 0px;">
+						<div class="spec_points_display no_select" id="talent_spec_points_remaining" style="top:445px; left:444px; font-size: 18px; display: block; width: 25px;">
+							<span> 46 </span>
+						</div>
+						<div class="spec_points_display no_select" id="talent_spec_points_0" style="top:427px; left:415px;">
+							<span> 0 </span>
+						</div>
+						<div class="spec_points_display no_select" id="talent_spec_points_1" style="top:411px; left:446px; font-size: 14px; color: grey;">
+							<span> 0 </span>
+						</div>
+						<div class="spec_points_display no_select" id="talent_spec_points_2" style="top:427px; left:478px;">
+							<span> 0 </span>
+						</div>
+						<div class="spec_points_display no_select" id="talent_spec_points_3" style="top:465px; left:480px; font-size: 14px; color: grey;">
+							<span> 0 </span>
+						</div>
+						<div class="spec_points_display no_select" id="talent_spec_points_4" style="top:485px; left:446px;">
+							<span> 0 </span>
+						</div>
+						<div class="spec_points_display no_select" id="talent_spec_points_5" style="top:465px; left:410px; font-size: 14px; color: grey;">
+							<span> 0 </span>
+						</div>
+					</div>
+					<div id="talents_circle_dividers" style="position:absolute; top: 0px;"></div>
+					<div id="tier_joiners" style="position:absolute; top:0;"></div>
+					<div id="talents_circle_tiers" style="position:absolute; top: 0px;"></div>
+					<div id="talent_joiners" style="position:absolute; top: 0;">
+					</div>
+					<div id="talents" style="position:absolute; top:0;"></div>
+						<div id="tooltip" style="display: none;">
+						<div id="tooltip_ability" style="display: none;">
+
+							<div class="tooltip_text no_select" id="tooltip_ability_name" style="width: 100%; padding-top: 6px; font-size: 14px;">
+								<span>Name of Ability or Talent</span>
+							</div>
+
+							<div id="tooltip_ability_columns">
+								<div id="tooltip_ability_column_left" style="width: 62%;">
+									<div class="tooltip_text no_select" id="tooltip_ability_resource">
+										<span>Resource</span>
+									</div>
+									<div class="tooltip_text no_select" id="tooltip_ability_cast_time">
+										<span>Cast Time</span>
+									</div>
+									<div class="tooltip_text no_select" id="tooltip_ability_requires_1">
+										<span>Requires 1</span>
+									</div>
+								</div>
+								<div id="tooltip_ability_column_right" style="width: 38%;">
+									<div class="tooltip_text no_select" id="tooltip_ability_range" style="text-align: right;">
+										<span>Range</span>
+									</div>
+									<div class="tooltip_text no_select" id="tooltip_ability_cooldown" style="text-align: right;">
+										<span>Cooldown</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="tooltip_text no_select" id="tooltip_ability_requires_2">
+								<span>Requires 2</span>
+							</div>
+
+							<div class="tooltip_text no_select" id="tooltip_ability_description">
+								<span>This is a description of Ability. Increase the value of Ability by 2%.</span>
+							</div>
+						</div>
+						<div id="tooltip_talent" style="display: none;">
+							<div class="tooltip_div_top">
+								<div class="tooltip_text no_select" id="tooltip_talent_name" style="width: 80%; padding-top: 6px; font-size: 14px;">
+									<span>Name of Ability or Talent</span>
+								</div>
+								<div class="tooltip_text no_select" id="tooltip_talent_rank" style="width: 20%; padding-top: 6px; font-size: 14px; color:#9d9d9d; text-align: right; padding-right:7px;">
+									<span>Rank</span>
+								</div>
+							</div>
+							<div class="tooltip_text no_select" id="tooltip_talent_description">
+								<span>This is a description of Ability. Increase the value of Ability by 2%.</span>
+							</div>
+							<div class="tooltip_text no_select" id="tooltip_talent_nextrank">
+								<br>
+								<span>Next rank:</span>
+							</div>
+							<div class="tooltip_text no_select" id="tooltip_talent_description_nextrank">
+								<span>This is a description of Ability. Increase the value of Ability by 4%.</span>
+							</div>
+						</div>
+						<div class="tooltip_text no_select" id="tooltip_talent_level" style="margin-top: 12px">
+							<span>Requires X points in Spec</span>
+						</div>
+						<div class="tooltip_text no_select" id="tooltip_prereq">
+							<span>Requires X points in Talent</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page_talents_mobile">
+			<div id="page_talents_mobile_text" class="header"> See the Interactive Talent Calculator on Desktop </div>
+		</div>
+		<div class="divider_large_down"></div>
+		<div id="page_equipment">
+			<div class="content_margin">
+				<div class="header"> Equipment </div>
+				<div class="underscore"></div>
+				<div class="text"> By design, end-game equipment must become obsolete in the next expansion. This limits the type of weapons and armor that can exist as they must eventually become worse than higher level equipment. As a result, most end-game equipment has simply been a collection of attributes, ensuring that it will be made obsolete by the next expansion. </div>
+				<div class="text"> There are thousands of weapons and armor pieces, but the vast majority will never be used again. Players are limited to the equipment from the most recent expansion, ensuring that the amount of choices a player has when selecting their equipment remains consistently low. </div>
+				<div class="text"> Without equipment needing to become obsolete, the variety could be increased to provide unique effects and abilities. New equipment could be added without replacing older equipment, continually increasing the amount of choices available to the player and allowing for unique builds and playstyles. </div>
+				<div class="subheader text_left"> Reborn </div>
+				<ul class="equipment_list">
+					<li class="text list_item"> Armor focuses on enhancing class capabilities and providing unique passive effects. </li>
+					<li class="text list_item"> All high-level weapons provide a unique ability or strong passive effect. </li>
+					<li class="text list_item"> Trinkets provide minor abilities or passive effects for defense, mobility, utility, or burst damage or healing. </li>
+					<li class="text list_item"> Equipment can be enhanced through the Artifact system, allowing players to improve their equipment and consistently progress from raids. </li>
+				</ul>
+			</div>
+		</div>
+		<div id="page_equipment_examples">
+			<div class="divider_small"></div>
+			<div id="equipment_armor">
+				<div id="equipment_header" class="header"> Armor </div>
+				<div class="underscore"></div>
+
+				<div id="equipment_table_0" class="equipment_table mobile_scale_down">
+					<div class="equipment_item">
+						<div class="equipment_info">
+							<div>
+								<img src="static/img/icons/equipment/inv_shield_32.jpg" class="equipment_item_icon">
+							</div>
+							<div>
+								<div class="equipment_text equipment_item_name" style="font-size: 16px; color: #a435ee; width: 280px; margin-bottom: 3px"> Equipment Name </div>
+								<div class="equipment_text equipment_item_binding"> Binds when picked up </div>
+								<div class="equipment_text equipment_item_slot_armor_type_table">
+									<div class="equipment_text equipment_item_slot" style="width: 50%; text-align: left;"> Chest </div>
+									<div class="equipment_text equipment_item_armor_class" style="width: 50%; text-align: right;">  Plate </div>
+								</div>
+								<div class="equipment_text equipment_item_armor_value"> 824 Armor </div>
+								<div class="equipment_text equipment_item_weapon_table">
+									<div class="equipment_text equipment_item_weapon_damage" style="width: 50%; text-align: left;"> 111-222 Damage </div>
+									<div class="equipment_text equipment_item_weapon_speed" style="width: 50%; text-align: right;">  Speed 1.0 </div>
+								</div>
+								<div class="equipment_text equipment_item_attributes">
+								</div>
+								<!-- <div class="equipment_text equipment_item_durability"> Durability 76/76 </div> -->
+								<div class="equipment_text equipment_item_class">
+									<span> Class: </span>
+									<span class="equipment_text equipment_item_class_name"> Class </span>
+								</div>
+								<div class="equipment_text equipment_item_effect" style="color: #1fff00;"> Effect: Increase your Attack Power by 24 for every 1,264 damage you take. Lasts 12 seconds. Maximum 5 stacks. Stacks refresh independently. </div>
+								<div class="equipment_item_selectability_section">
+									<br>
+									<div class="equipment_text equipment_item_selectability" style="color: #1fff00;"> [Shift-Click to Select Ability] </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="equipment_button_area">
+					<button id="equipment_armor_button" class="button_stylized mobile_hide"> Show More </button>
+				</div>
+			</div>
+			<div class="divider_small"></div>
+			<div id="equipment_weapons">
+				<div id="equipment_header" class="header"> Weapons </div>
+				<div class="underscore"></div>
+
+				<div id="equipment_table_1" class="equipment_table mobile_scale_down">
+					<div class="equipment_item">
+						<div class="equipment_info">
+							<div>
+								<img src="static/img/icons/equipment/inv_shield_32.jpg" class="equipment_item_icon">
+							</div>
+							<div>
+								<div class="equipment_text equipment_item_name" style="font-size: 16px; color: #a435ee; width: 280px; margin-bottom: 3px"> Equipment Name </div>
+								<div class="equipment_text equipment_item_binding"> Binds when picked up </div>
+								<div class="equipment_text equipment_item_slot_armor_type_table">
+									<div class="equipment_text equipment_item_slot" style="width: 50%; text-align: left;"> Chest </div>
+									<div class="equipment_text equipment_item_armor_class" style="width: 50%; text-align: right;">  Plate </div>
+								</div>
+								<div class="equipment_text equipment_item_armor_value"> 824 Armor </div>
+								<div class="equipment_text equipment_item_weapon_table">
+									<div class="equipment_text equipment_item_weapon_damage" style="width: 50%; text-align: left;"> 111-222 Damage </div>
+									<div class="equipment_text equipment_item_weapon_speed" style="width: 50%; text-align: right;">  Speed 1.0 </div>
+								</div>
+								<div class="equipment_text equipment_item_attributes">
+								</div>
+								<!-- <div class="equipment_text equipment_item_durability"> Durability 76/76 </div> -->
+								<div class="equipment_text equipment_item_class">
+									<span> Class: </span>
+									<span class="equipment_text equipment_item_class_name"> Class </span>
+								</div>
+								<div class="equipment_text equipment_item_effect" style="color: #1fff00;"> Effect: Increase your Attack Power by 24 for every 1,264 damage you take. Lasts 12 seconds. Maximum 5 stacks. Stacks refresh independently. </div>
+								<div class="equipment_item_selectability_section">
+									<br>
+									<div class="equipment_text equipment_item_selectability" style="color: #1fff00;"> [Shift-Click to Select Ability] </div>
+								</div>
+							</div>
+						</div>
+						<div class="equipment_ability_info">
+							<div>
+								<img src="static/img/icons/equipment/inv_shield_32.jpg" class="equipment_ability_icon">
+							</div>
+							<div class="equipment_ability">
+								<div class="equipment_ability_name equipment_text"> Ability Name </div>
+								<div class="equipment_ability_columns">
+									<div class="equipment_ability_column_left" style="width: 61%;">
+										<div class="equipment_text no_select equipment_ability_resource">
+											<span>Resource</span>
+										</div>
+										<div class="equipment_text no_select equipment_ability_casttime">
+											<span>Cast Time</span>
+										</div>
+										<div class="equipment_text no_select equipment_ability_requires_1" style="font-size: 10.5px">
+											<span>Requires 1</span>
+										</div>
+									</div>
+									<div class="equipment_ability_column_right" style="width: 39%;">
+										<div class="equipment_text no_select equipment_ability_range" style="text-align: right;">
+											<span>Range</span>
+										</div>
+										<div class="equipment_text no_select equipment_ability_cooldown" style="text-align: right;">
+											<span>Cooldown</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="equipment_text no_select equipment_ability_requires_2" style="font-size: 10.5px">
+									<span>Requires 2</span>
+								</div>
+
+								<div class="equipment_text no_select equipment_ability_description">
+									<span>This is a description of Ability. Increase the value of Ability by 2%.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="equipment_button_area">
+					<button id="equipment_weapons_button" class="button_stylized mobile_hide"> Show More </button>
+				</div>
+			</div>
+			<div class="divider_small"></div>
+			<div id="equipment_trinkets">
+				<div id="equipment_header" class="header"> Trinkets </div>
+				<div class="underscore"></div>
+
+				<div id="equipment_table_2" class="equipment_table mobile_scale_down">
+					<div class="equipment_item">
+						<div class="equipment_info">
+							<div>
+								<img src="static/img/icons/equipment/inv_shield_32.jpg" class="equipment_item_icon">
+							</div>
+							<div>
+								<div class="equipment_text equipment_item_name" style="font-size: 16px; color: #a435ee; width: 280px; margin-bottom: 3px"> Equipment Name </div>
+								<div class="equipment_text equipment_item_binding"> Binds when picked up </div>
+								<div class="equipment_text equipment_item_slot_armor_type_table">
+									<div class="equipment_text equipment_item_slot" style="width: 50%; text-align: left;"> Chest </div>
+									<div class="equipment_text equipment_item_armor_class" style="width: 50%; text-align: right;">  Plate </div>
+								</div>
+								<div class="equipment_text equipment_item_armor_value"> 824 Armor </div>
+								<div class="equipment_text equipment_item_weapon_table">
+									<div class="equipment_text equipment_item_weapon_damage" style="width: 50%; text-align: left;"> 111-222 Damage </div>
+									<div class="equipment_text equipment_item_weapon_speed" style="width: 50%; text-align: right;">  Speed 1.0 </div>
+								</div>
+								<div class="equipment_text equipment_item_attributes">
+								</div>
+								<!-- <div class="equipment_text equipment_item_durability"> Durability 76/76 </div> -->
+								<div class="equipment_text equipment_item_class">
+									<span> Class: </span>
+									<span class="equipment_text equipment_item_class_name"> Class </span>
+								</div>
+								<div class="equipment_text equipment_item_effect" style="color: #1fff00;"> Effect: Increase your Attack Power by 24 for every 1,264 damage you take. Lasts 12 seconds. Maximum 5 stacks. Stacks refresh independently. </div>
+								<div class="equipment_item_selectability_section">
+									<br>
+									<div class="equipment_text equipment_item_selectability" style="color: #1fff00;"> [Shift-Click to Select Ability] </div>
+								</div>
+							</div>
+						</div>
+						<div class="equipment_ability_info">
+							<div>
+								<img src="static/img/icons/equipment/inv_shield_32.jpg" class="equipment_ability_icon">
+							</div>
+							<div class="equipment_ability">
+								<div class="equipment_ability_name equipment_text"> Ability Name </div>
+								<div class="equipment_ability_columns">
+									<div class="equipment_ability_column_left" style="width: 61%;">
+										<div class="equipment_text no_select equipment_ability_resource">
+											<span>Resource</span>
+										</div>
+										<div class="equipment_text no_select equipment_ability_casttime">
+											<span>Cast Time</span>
+										</div>
+										<div class="equipment_text no_select equipment_ability_requires_1" style="font-size: 10.5px">
+											<span>Requires 1</span>
+										</div>
+									</div>
+									<div class="equipment_ability_column_right" style="width: 39%;">
+										<div class="equipment_text no_select equipment_ability_range" style="text-align: right;">
+											<span>Range</span>
+										</div>
+										<div class="equipment_text no_select equipment_ability_cooldown" style="text-align: right;">
+											<span>Cooldown</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="equipment_text no_select equipment_ability_requires_2" style="font-size: 10.5px">
+									<span>Requires 2</span>
+								</div>
+
+								<div class="equipment_text no_select equipment_ability_description">
+									<span>This is a description of Ability. Increase the value of Ability by 2%.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="equipment_button_area">
+					<button id="equipment_trinkets_button" class="button_stylized mobile_hide"> Show More </button>
+				</div>
+				<div class="subheader desktop_hide" style="padding: 10px 8vw 0px 8vw;"> See more Armor, Weapons, and Trinkets on Desktop </div>
+			</div>
+		</div>
+		<div class="divider_small"></div>
+		<div id="page_artifacts">
+			<div id="equipment_header" class="header"> Artifacts </div>
+			<div class="underscore"></div>
+			<ul class="equipment_list">
+				<li class="text list_item"> Armor can be converted into an Artifact, allowing it to increase in strength. </li>
+				<li class="text list_item"> The conversion requires "Artifact Fragments" which are a rare drop from raid bosses. </li>
+				<li class="text list_item"> Artifacts increase in strength by defeating raid bosses while they are equipped and take 2-3 months of raiding to reach their maximum level. </li>
+				<li class="text list_item"> Artifacts can be "recycled" for a moderate cost, allowing their fragments and gained power to be transferred to a new piece of armor. </li>
+				<li class="text list_item"> Weapons and Trinkets cannot be converted as players should be free to change these to suit their current environment without feeling like they're losing progress. </li>
+			</ul>
+			<br>
+			<br>
+			<div id="equipment_header" class="header"> Examples </div>
+			<div class="underscore"></div>
+			<div class="artifact_comparison">
+				<div class="equipment_item artifact_equipment_mobile" id="artifact_before_0">
+					<div class="equipment_info">
+						<div>
+							<img src="static/img/icons/equipment/inv_shield_32.jpg" class="equipment_item_icon">
+						</div>
+						<div>
+							<div class="equipment_text equipment_item_name" style="font-size: 16px; color: #a435ee; width: 280px; margin-bottom: 3px"> Equipment Name </div>
+							<div class="equipment_text equipment_item_binding"> Binds when picked up </div>
+							<div class="equipment_text equipment_item_slot_armor_type_table">
+								<div class="equipment_text equipment_item_slot" style="width: 50%; text-align: left;"> Chest </div>
+								<div class="equipment_text equipment_item_armor_class" style="width: 50%; text-align: right;">  Plate </div>
+							</div>
+							<div class="equipment_text equipment_item_armor_value"> 824 Armor </div>
+							<div class="equipment_text equipment_item_weapon_table">
+								<div class="equipment_text equipment_item_weapon_damage" style="width: 50%; text-align: left;"> 111-222 Damage </div>
+								<div class="equipment_text equipment_item_weapon_speed" style="width: 50%; text-align: right;">  Speed 1.0 </div>
+							</div>
+							<div class="equipment_text equipment_item_attributes">
+							</div>
+							<div class="equipment_text equipment_item_class">
+								<span> Class: </span>
+								<span class="equipment_text equipment_item_class_name"> Class </span>
+							</div>
+							<div class="equipment_text equipment_item_effect" style="color: #1fff00;"> Effect: Increase your Attack Power by 24 for every 1,264 damage you take. Lasts 12 seconds. Maximum 5 stacks. Stacks refresh independently. </div>
+							<div class="equipment_item_selectability_section">
+								<br>
+								<div class="equipment_text equipment_item_selectability" style="color: #1fff00;"> [Shift-Click to Select Ability] </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="equipment_item equipment_item_artifact artifact_equipment_mobile" id="artifact_after_0">
+					<div class="equipment_info">
+						<div>
+							<img src="static/img/icons/equipment/inv_shield_32.jpg" class="equipment_item_icon">
+						</div>
+						<div>
+							<img src="static/img/elements/artifact_wreath.png" class="artifact_wreath">
+							<div id="artifact_wreath_text_0" class="artifact_wreath_text"> 1 </div>
+							<div class="equipment_text equipment_item_name" style="font-size: 16px; color: #e6cc80; width: 280px; margin-bottom: 3px"> Equipment Name </div>
+							<div class="equipment_text equipment_item_binding"> Binds when picked up </div>
+							<div class="equipment_text equipment_item_slot_armor_type_table">
+								<div class="equipment_text equipment_item_slot" style="width: 50%; text-align: left;"> Chest </div>
+								<div class="equipment_text equipment_item_armor_class" style="width: 50%; text-align: right;">  Plate </div>
+							</div>
+							<div class="equipment_text equipment_item_armor_value"> 824 Armor </div>
+							<div class="equipment_text equipment_item_weapon_table">
+								<div class="equipment_text equipment_item_weapon_damage" style="width: 50%; text-align: left;"> 111-222 Damage </div>
+								<div class="equipment_text equipment_item_weapon_speed" style="width: 50%; text-align: right;">  Speed 1.0 </div>
+							</div>
+							<div class="equipment_text equipment_item_attributes">
+							</div>
+							<div class="equipment_text equipment_item_class">
+								<span> Class: </span>
+								<span class="equipment_text equipment_item_class_name"> Class </span>
+							</div>
+							<div class="equipment_text equipment_item_effect" style="color: #1fff00;"> Effect: Increase your Attack Power by 24 for every 1,264 damage you take. Lasts 12 seconds. Maximum 5 stacks. Stacks refresh independently. </div>
+							<div class="equipment_item_selectability_section">
+								<br>
+								<div class="equipment_text equipment_item_selectability" style="color: #1fff00;"> [Shift-Click to Select Ability] </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="artifact_level_slider_container">
+				<div class="slidecontainer">
+					<input type="range" min="1" max="5" value="1" class="slider slider_artifacts" id="artifact_slider_0">
+				</div>
+			</div>
+			<hr>
+			<div class="artifact_comparison">
+				<div class="equipment_item artifact_equipment_mobile" id="artifact_before_1">
+					<div class="equipment_info">
+						<div>
+							<img src="static/img/icons/equipment/inv_shield_32.jpg" class="equipment_item_icon">
+						</div>
+						<div>
+							<div class="equipment_text equipment_item_name" style="font-size: 16px; color: #a435ee; width: 280px; margin-bottom: 3px"> Equipment Name </div>
+							<div class="equipment_text equipment_item_binding"> Binds when picked up </div>
+							<div class="equipment_text equipment_item_slot_armor_type_table">
+								<div class="equipment_text equipment_item_slot" style="width: 50%; text-align: left;"> Chest </div>
+								<div class="equipment_text equipment_item_armor_class" style="width: 50%; text-align: right;">  Plate </div>
+							</div>
+							<div class="equipment_text equipment_item_armor_value"> 824 Armor </div>
+							<div class="equipment_text equipment_item_weapon_table">
+								<div class="equipment_text equipment_item_weapon_damage" style="width: 50%; text-align: left;"> 111-222 Damage </div>
+								<div class="equipment_text equipment_item_weapon_speed" style="width: 50%; text-align: right;">  Speed 1.0 </div>
+							</div>
+							<div class="equipment_text equipment_item_attributes">
+							</div>
+							<div class="equipment_text equipment_item_class">
+								<span> Class: </span>
+								<span class="equipment_text equipment_item_class_name"> Class </span>
+							</div>
+							<div class="equipment_text equipment_item_effect" style="color: #1fff00;"> Effect: Increase your Attack Power by 24 for every 1,264 damage you take. Lasts 12 seconds. Maximum 5 stacks. Stacks refresh independently. </div>
+							<div class="equipment_item_selectability_section">
+								<br>
+								<div class="equipment_text equipment_item_selectability" style="color: #1fff00;"> [Shift-Click to Select Ability] </div>
+							</div>
+						</div>
+					</div>
+					<div class="equipment_ability_info">
+						<div>
+							<img src="static/img/icons/equipment/inv_shield_32.jpg" class="equipment_ability_icon">
+						</div>
+						<div class="equipment_ability">
+							<div class="equipment_ability_name equipment_text"> Ability Name </div>
+							<div class="equipment_ability_columns">
+								<div class="equipment_ability_column_left" style="width: 61%;">
+									<div class="equipment_text no_select equipment_ability_resource">
+										<span>Resource</span>
+									</div>
+									<div class="equipment_text no_select equipment_ability_casttime">
+										<span>Cast Time</span>
+									</div>
+									<div class="equipment_text no_select equipment_ability_requires_1" style="font-size: 10.5px">
+										<span>Requires 1</span>
+									</div>
+								</div>
+								<div class="equipment_ability_column_right" style="width: 39%;">
+									<div class="equipment_text no_select equipment_ability_range" style="text-align: right;">
+										<span>Range</span>
+									</div>
+									<div class="equipment_text no_select equipment_ability_cooldown" style="text-align: right;">
+										<span>Cooldown</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="equipment_text no_select equipment_ability_requires_2" style="font-size: 10.5px">
+								<span>Requires 2</span>
+							</div>
+
+							<div class="equipment_text no_select equipment_ability_description">
+								<span>This is a description of Ability. Increase the value of Ability by 2%.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="equipment_item equipment_item_artifact artifact_equipment_mobile" id="artifact_after_1">
+					<div class="equipment_info">
+						<div>
+							<img src="static/img/icons/equipment/inv_shield_32.jpg" class="equipment_item_icon">
+						</div>
+						<div>
+							<img src="static/img/elements/artifact_wreath.png" class="artifact_wreath">
+							<div id="artifact_wreath_text_1" class="artifact_wreath_text"> 1 </div>
+							<div class="equipment_text equipment_item_name" style="font-size: 16px; color: #e6cc80; width: 280px; margin-bottom: 3px"> Equipment Name </div>
+							<div class="equipment_text equipment_item_binding"> Binds when picked up </div>
+							<div class="equipment_text equipment_item_slot_armor_type_table">
+								<div class="equipment_text equipment_item_slot" style="width: 50%; text-align: left;"> Chest </div>
+								<div class="equipment_text equipment_item_armor_class" style="width: 50%; text-align: right;">  Plate </div>
+							</div>
+							<div class="equipment_text equipment_item_armor_value"> 824 Armor </div>
+							<div class="equipment_text equipment_item_weapon_table">
+								<div class="equipment_text equipment_item_weapon_damage" style="width: 50%; text-align: left;"> 111-222 Damage </div>
+								<div class="equipment_text equipment_item_weapon_speed" style="width: 50%; text-align: right;">  Speed 1.0 </div>
+							</div>
+							<div class="equipment_text equipment_item_attributes">
+							</div>
+							<div class="equipment_text equipment_item_class">
+								<span> Class: </span>
+								<span class="equipment_text equipment_item_class_name"> Class </span>
+							</div>
+							<div class="equipment_text equipment_item_effect" style="color: #1fff00;"> Effect: Increase your Attack Power by 24 for every 1,264 damage you take. Lasts 12 seconds. Maximum 5 stacks. Stacks refresh independently. </div>
+							<div class="equipment_item_selectability_section">
+								<br>
+								<div class="equipment_text equipment_item_selectability" style="color: #1fff00;"> [Shift-Click to Select Ability] </div>
+							</div>
+						</div>
+					</div>
+					<div class="equipment_ability_info">
+						<div>
+							<img src="static/img/icons/equipment/inv_shield_32.jpg" class="equipment_ability_icon">
+						</div>
+						<div class="equipment_ability">
+							<div class="equipment_ability_name equipment_text"> Ability Name </div>
+							<div class="equipment_ability_columns">
+								<div class="equipment_ability_column_left" style="width: 61%;">
+									<div class="equipment_text no_select equipment_ability_resource">
+										<span>Resource</span>
+									</div>
+									<div class="equipment_text no_select equipment_ability_casttime">
+										<span>Cast Time</span>
+									</div>
+									<div class="equipment_text no_select equipment_ability_requires_1" style="font-size: 10.5px">
+										<span>Requires 1</span>
+									</div>
+								</div>
+								<div class="equipment_ability_column_right" style="width: 39%;">
+									<div class="equipment_text no_select equipment_ability_range" style="text-align: right;">
+										<span>Range</span>
+									</div>
+									<div class="equipment_text no_select equipment_ability_cooldown" style="text-align: right;">
+										<span>Cooldown</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="equipment_text no_select equipment_ability_requires_2" style="font-size: 10.5px">
+								<span>Requires 2</span>
+							</div>
+
+							<div class="equipment_text no_select equipment_ability_description">
+								<span>This is a description of Ability. Increase the value of Ability by 2%.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="artifact_level_slider_container">
+				<div class="slidecontainer">
+					<input type="range" min="1" max="5" value="1" class="slider slider_artifacts" id="artifact_slider_1">
+				</div>
+			</div>
+			<hr>
+			<div class="artifact_comparison">
+				<div class="equipment_item artifact_equipment_mobile" id="artifact_before_2">
+					<div class="equipment_info">
+						<div>
+							<img src="static/img/icons/equipment/inv_shield_32.jpg" class="equipment_item_icon">
+						</div>
+						<div>
+							<div class="equipment_text equipment_item_name" style="font-size: 16px; color: #a435ee; width: 280px; margin-bottom: 3px"> Equipment Name </div>
+							<div class="equipment_text equipment_item_binding"> Binds when picked up </div>
+							<div class="equipment_text equipment_item_slot_armor_type_table">
+								<div class="equipment_text equipment_item_slot" style="width: 50%; text-align: left;"> Chest </div>
+								<div class="equipment_text equipment_item_armor_class" style="width: 50%; text-align: right;">  Plate </div>
+							</div>
+							<div class="equipment_text equipment_item_armor_value"> 824 Armor </div>
+							<div class="equipment_text equipment_item_weapon_table">
+								<div class="equipment_text equipment_item_weapon_damage" style="width: 50%; text-align: left;"> 111-222 Damage </div>
+								<div class="equipment_text equipment_item_weapon_speed" style="width: 50%; text-align: right;">  Speed 1.0 </div>
+							</div>
+							<div class="equipment_text equipment_item_attributes">
+							</div>
+							<div class="equipment_text equipment_item_class">
+								<span> Class: </span>
+								<span class="equipment_text equipment_item_class_name"> Class </span>
+							</div>
+							<div class="equipment_text equipment_item_effect" style="color: #1fff00;"> Effect: Increase your Attack Power by 24 for every 1,264 damage you take. Lasts 12 seconds. Maximum 5 stacks. Stacks refresh independently. </div>
+							<div class="equipment_item_selectability_section">
+								<br>
+								<div class="equipment_text equipment_item_selectability" style="color: #1fff00;"> [Shift-Click to Select Ability] </div>
+							</div>
+						</div>
+					</div>
+					<div class="equipment_ability_info">
+						<div>
+							<img src="static/img/icons/equipment/inv_shield_32.jpg" class="equipment_ability_icon">
+						</div>
+						<div class="equipment_ability">
+							<div class="equipment_ability_name equipment_text"> Ability Name </div>
+							<div class="equipment_ability_columns">
+								<div class="equipment_ability_column_left" style="width: 61%;">
+									<div class="equipment_text no_select equipment_ability_resource">
+										<span>Resource</span>
+									</div>
+									<div class="equipment_text no_select equipment_ability_casttime">
+										<span>Cast Time</span>
+									</div>
+									<div class="equipment_text no_select equipment_ability_requires_1" style="font-size: 10.5px">
+										<span>Requires 1</span>
+									</div>
+								</div>
+								<div class="equipment_ability_column_right" style="width: 39%;">
+									<div class="equipment_text no_select equipment_ability_range" style="text-align: right;">
+										<span>Range</span>
+									</div>
+									<div class="equipment_text no_select equipment_ability_cooldown" style="text-align: right;">
+										<span>Cooldown</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="equipment_text no_select equipment_ability_requires_2" style="font-size: 10.5px">
+								<span>Requires 2</span>
+							</div>
+
+							<div class="equipment_text no_select equipment_ability_description">
+								<span>This is a description of Ability. Increase the value of Ability by 2%.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="equipment_item equipment_item_artifact artifact_equipment_mobile" id="artifact_after_2">
+					<div class="equipment_info">
+						<div>
+							<img src="static/img/icons/equipment/inv_shield_32.jpg" class="equipment_item_icon">
+						</div>
+						<div>
+							<img src="static/img/elements/artifact_wreath.png" class="artifact_wreath">
+							<div id="artifact_wreath_text_2" class="artifact_wreath_text"> 1 </div>
+							<div class="equipment_text equipment_item_name" style="font-size: 16px; color: #e6cc80; width: 280px; margin-bottom: 3px"> Equipment Name </div>
+							<div class="equipment_text equipment_item_binding"> Binds when picked up </div>
+							<div class="equipment_text equipment_item_slot_armor_type_table">
+								<div class="equipment_text equipment_item_slot" style="width: 50%; text-align: left;"> Chest </div>
+								<div class="equipment_text equipment_item_armor_class" style="width: 50%; text-align: right;">  Plate </div>
+							</div>
+							<div class="equipment_text equipment_item_armor_value"> 824 Armor </div>
+							<div class="equipment_text equipment_item_weapon_table">
+								<div class="equipment_text equipment_item_weapon_damage" style="width: 50%; text-align: left;"> 111-222 Damage </div>
+								<div class="equipment_text equipment_item_weapon_speed" style="width: 50%; text-align: right;">  Speed 1.0 </div>
+							</div>
+							<div class="equipment_text equipment_item_attributes">
+							</div>
+							<div class="equipment_text equipment_item_class">
+								<span> Class: </span>
+								<span class="equipment_text equipment_item_class_name"> Class </span>
+							</div>
+							<div class="equipment_text equipment_item_effect" style="color: #1fff00;"> Effect: Increase your Attack Power by 24 for every 1,264 damage you take. Lasts 12 seconds. Maximum 5 stacks. Stacks refresh independently. </div>
+							<div class="equipment_item_selectability_section">
+								<br>
+								<div class="equipment_text equipment_item_selectability" style="color: #1fff00;"> [Shift-Click to Select Ability] </div>
+							</div>
+						</div>
+					</div>
+					<div class="equipment_ability_info">
+						<div>
+							<img src="static/img/icons/equipment/inv_shield_32.jpg" class="equipment_ability_icon">
+						</div>
+						<div class="equipment_ability">
+							<div class="equipment_ability_name equipment_text"> Ability Name </div>
+							<div class="equipment_ability_columns">
+								<div class="equipment_ability_column_left" style="width: 61%;">
+									<div class="equipment_text no_select equipment_ability_resource">
+										<span>Resource</span>
+									</div>
+									<div class="equipment_text no_select equipment_ability_casttime">
+										<span>Cast Time</span>
+									</div>
+									<div class="equipment_text no_select equipment_ability_requires_1" style="font-size: 10.5px">
+										<span>Requires 1</span>
+									</div>
+								</div>
+								<div class="equipment_ability_column_right" style="width: 39%;">
+									<div class="equipment_text no_select equipment_ability_range" style="text-align: right;">
+										<span>Range</span>
+									</div>
+									<div class="equipment_text no_select equipment_ability_cooldown" style="text-align: right;">
+										<span>Cooldown</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="equipment_text no_select equipment_ability_requires_2" style="font-size: 10.5px">
+								<span>Requires 2</span>
+							</div>
+
+							<div class="equipment_text no_select equipment_ability_description">
+								<span>This is a description of Ability. Increase the value of Ability by 2%.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="artifact_level_slider_container">
+				<div class="slidecontainer">
+					<input type="range" min="1" max="5" value="1" class="slider slider_artifacts" id="artifact_slider_2">
+				</div>
+			</div>
+		</div>
+		<div class="divider_large_down"></div>
+		<div id="page_raids">
+			<div id="page_raids_bar">
+				<div class="content_margin">
+					<div class="header"> Raids </div>
+					<div class="underscore"></div>
+					<div class="text"> As each expansion only lasts a few years, the amount of raiding content that can be relevant at any given time is limited. Raid progress tends to be relatively sequential, leaving players with few options in how they progress. </div>
+					<div class="text"> To address this, scaling raid difficulties and sizes were introduced to make raid content more available to players. However, with multiple difficulties and sizes, players are left unaware of what the intended difficulty of the raid is supposed to be, devaluing the accomplishment from completing it. Additionally, with progress relying heavily on replaying the same content, players are more likely to become disinterested and quit. </div>
+					<div class="text"> With a permanent or unlimited level cap, raid content could be continually added without making older raids obsolete. Over time there could be dozens of raids available, providing players with options in how they will progress and improving re-playability for new characters. </div>
+					<div class="subheader text_left"> Reborn </div>
+					<ul class="raid_list">
+						<li class="text list_item"> Each character is limited to 2 raids per week to prevent hardcore players from significantly outpacing casual players. </li>
+						<li class="text list_item"> Each raid has one difficulty and size. </li>
+						<li class="text list_item"> Typical raid sizes range from 10-man to 30-man, with difficulties ranging from beginner to expert. Raids larger than 30-man are generally limited to a single boss. </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="divider_large_down"></div>
+		<div id="page_leveling">
+			<div class="content_margin">
+				<div class="header"> Leveling </div>
+				<div class="underscore"></div>
+				<div class="text"> When the level cap is raised, new zones, quests, and dungeons must be added for leveling content. As a result, the total amount of time it takes to reach the level cap has to increase, or the time spent at each level must decrease. </div>
+				<ul class="list">
+					<li class="text list_item_narrow"> <b> Longer Leveling Experience: </b> The total amount of time it takes to reach the level cap is increased. After multiple expansions, players may become frustrated by the amount of time spent leveling. </li>
+					<li class="text list_item_narrow"> <b> Shorter Levels: </b> Each level takes less time to complete, resulting in characters progressing through zones and quests faster than they were intended to. As this increases, players will likely never experience the depth of any zone and feel like they are being rushed through content. </li>
+					<li class="text list_item_narrow"> <b> Scaling: </b> Zones and quests scale with the player's level, allowing the player to quest anywhere they choose. This reduces the player's sense of progression as gaining levels no longer makes their character stronger relative to the world. Furthermore, immersion is greatly reduced as the world feels arbitrary instead of grounded in reality.</li>
+				</ul>
+				<div class="text"> With added leveling content tending to exclusively focus on the new leveling experience, the amount of content relevant to the player as a proportion of all content decreases with each expansion. This leads to the world to feeling stratified as players must progress through a linear sequence of zones, having few choices in where they can level. </div>
+				<div class="subheader text_left"> Reborn </div>
+				<div class="text">
+					<ul class="list">
+						<li class="text list_item"> New zones, quests, and dungeons add to the existing leveling experience, providing players with a larger range of options of how and where they want to level. </li> 
+						<li class="text list_item"> Quests are longer but provide greater rewards to compensate. There are fewer quests available at any given time in each town or settlement, increasing the significance of each quest. </li>
+						<!-- <li class="text list_item"> Quests are more likely to be acquired from a variety of sources, including item drops, killing rare creatures, and finding unique objects in the world. </li>  -->
+						<li class="text list_item"> The quest system aims to provide each character with a unique leveling experience. There are several types of quests, each with different criteria for how they become available to the character: </li> 
+						<ul class="sub_list">
+							<li class="text list_item_narrow"> <b> Static: </b> Available to all players at all times provided they have completed any prerequisite quests. Used for questlines that are important to the lore or are required for progression (ex. raid attunements). </li>
+							<li class="text list_item_narrow"> <b> Dynamic: </b> Based on events and seasons (ex: a flash flood strands workers that need to be rescued, an exploding volcano releases fire elementals that need to be slain, a dust storm damages a settlement which needs to be repaired, etc). </li>
+							<li class="text list_item_narrow"> <b> Random: </b> Randomly selected from a pool of potential quests (ex: a town has 6 potential quests with 2-3 chosen to become available to the character. If the player has a new character enter the same town, the new character will have 2-3 of the unplayed quests become available.) </li>
+							<li class="text list_item_narrow"> <b> Rare: </b> Each quest is only given to a very small percentage of players (~5% or less) but has very strong rewards. A character will likely only experience several rare quests while leveling. A player will not get the same rare quest more than once. </li>
+							<li class="text list_item_narrow"> <b> Gated: </b> Based on class, race, professions, faction reputation, game progression, or other variables. </li>
+						</ul>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="divider_large_down"></div>
+		<div id="page_immersion">
+			<div class="content_margin">
+				<div class="header"> Immersion </div>
+				<div class="underscore"></div>
+				<div class="text"> When a new expansion releases, the end-game content from the previous expansion typically remains unchanged. This creates inconsistencies in the lore where the highest level players are stronger than what are supposed to be extremely powerful figures in the Warcraft universe such as Illidan, Kil’jaeden, or The Lich King. All of whom could be easily killed by a single player in later expansions. </div>
+				<div class="text"> Furthermore, as expansions render previous end-game content obsolete, the world develops “dead-zones” where players have no reason to be and become abandoned, making the world feel deserted. </div>
+				<div class="text"> Without the need to reset characters for each expansion, all content could be kept relevant, eliminating any lore inconsistencies and preserving immersion when new content is added. </div>
+				<div class="subheader text_left"> New Features </div>
+				<ul class="list">
+					<li class="text list_item"> <b> Seasons: </b> The climate of Azeroth alternates between summer and winter several times per year. The amount of change each zone undergoes varies, with some zones having minor changes and others being significantly changed. Seasons are designed to make the world feel more dynamic, as players will interact differently with the world based on the season. </li>
+					<ul class="sub_list">
+						<li class="text list_item_narrow"> <b> Content Availability: </b> Quests can reflect the current season (ex. hunting animals in the summer before they migrate). Zones and dungeons may change or become inaccessible (ex. a dungeon freezes over in the winter, becoming inaccessible). </li>
+						<li class="text list_item_narrow"> <b> Plants and Animals: </b> Certain plants and animals can only be found during a specific season (ex. herbs that only grow during the summer, animals that hibernate and can't be found in the winter). </li>
+						<li class="text list_item_narrow"> <b> Weather: </b> Weather and related effects (ex. Stranglethorn Vale receives more rain in the summer, causing rivers to rise and occasionally flood areas. Winterspring receives more snow in the winter, increasing snow levels). </li>
+					</ul>
+					<li class="text list_item"> <b> World Map: </b> The world map is replaced with an interactive globe that shows where each continent and zone is. The globe has exaggerated features for notable items such as mountain ranges, lakes, and unique structures. Additional information is added as the player discovers it, such as settlements, flight paths, ship routes, and more. </li>
+				</ul>
+			</div>
+		</div>
+		<div class="divider_large_down"></div>
+		<div id="page_playerbase">
+			<div class="content_margin">
+				<div class="header"> Playerbase </div>
+				<div class="underscore"></div>
+				<div class="text"> As almost all end-game content is discarded at the start of each new expansion, new players are denied the opportunity to ever experience it. Any potential new players will increasingly feel as though they are joining too late and have already missed a substantial amount of the game. This is seen most clearly in raids from previous expansions, where players are unable to experience them the way they were intended. Despite there being a substantial amount of content being continually added, the only aspect that changes in any meaningful way is the leveling experience. </div>
+				<div class="text"> This creates a system where potential new players have no greater incentive to join now as they would have 5 or 10 years ago. Regardless of when they were to join, the amount of content available to them would be largely the same. </div>
+				<div class="text"> By contrast, a fixed or unlimited level cap would allow the game to continue to grow in size and depth each year. New zones, dungeons, raids, equipment, world events, and more would build on top of the previous content, continuously increasing the game's appeal to new players. Long-term player retention would be driven primarily by extensive character building and progression, as well as the large amount of content available. </div>
+			</div>
+		</div>
+		<div class="divider_large_down"></div>
+		<div id="page_misc">
+			<div id="page_misc_content">
+				<div class="header"> Miscellaneous </div>
+				<div class="underscore"></div>
+				<div class="subheader text_left"> Equipment </div>
+				<ul class="list">
+					<li class="text list_item"> <b> Attributes: </b> The following attributes have been added, modified, or removed: </li>
+					<ul class="sub_list">
+						<li class="text list_item_narrow"> <b> New - Haste: </b> Increases Attack Speed, Cast Speed, and the rate at which DoT's and HoT's tick. Reduces the Global Cooldown. </li>
+						<li class="text list_item_narrow"> <b> New - Discipline: </b> Increases the rate at which ability cooldowns recover (ex: +100 Discipline provides 13.6% faster cooldown recovery). </li>
+						<li class="text list_item_narrow"> <b> New - Reach: </b> Increases the range of abilities and the size of area of effects (ex: +100 Reach provides 11.9% longer range and 23.8% larger AoE's).</li>
+						<li class="text list_item_narrow"> <b> New - Vitality: </b> Restores 1 Health every 5 seconds. The amount of Health restored increases by 200% while out of combat. </li>
+						<li class="text list_item_narrow"> <b> Modified - Spirit: </b> Restores 1 Mana every 5 seconds. The amount of Mana restored increases by 200% while out of combat. </li>
+						<li class="text list_item_narrow"> <b> Modified - Intellect: </b> Increases Mana by 10 points. No longer increases spell Critical Hit chance. </li>
+						<li class="text list_item_narrow"> <b> Removed - Hit Rating: </b> Characters have a 100% Hit chance against Bosses and enemies within 3 levels above the character's level. A character's Hit chance is reduced by 5% per level past this threshold (ex. 5% at +4 levels, 25% at +8 levels), up to a maximum of 75%. A character's Hit chance can also be temporarily reduced by enemy abilities, spells, talents, or other effects. </li>
+						<li class="text list_item_narrow"> <b> Removed - Defense: </b> Separated into its base components (Dodge, Parry, and Block chance). Bosses and enemy NPC's within 3 levels above the character's level will not Critically Hit. Enemy NPC's gain a 15% Critical Hit chance per level past this threshold (ex: 15% at +4 levels, 75% at +8 levels). Spells, abilities, talents, and other effects can affect a unit's chance to be Critically Hit. </li>
+						<li class="text list_item_narrow"> <b> Removed - Strength: </b> Separated into its base components (Attack Power and Block Value). </li>
+						<li class="text list_item_narrow"> <b> Removed - Agility: </b> Separated into its base components (Attack Power, Armor, Dodge chance, and Critical Hit chance). </li>
+						<li class="text list_item_narrow"> <b> Removed - Weapon Skill: </b> Additional Weapon Skill gained from equipment or talents has been removed. Base Weapon Skills have been modified (see 'Combat - Weapon Skills').</li>
+						<li class="text list_item_narrow"> <b> Removed - Spell Penetration: </b> Removed due to its limited uses and difficulty in determining its effectiveness. </li>
+					</ul>
+					<li class="text list_item"> <b> Soulbinds: </b> Bind on Pickup equipment from dungeons and raids does not have a required level. If the player is a high enough level to enter the dungeon or raid, they can use any appropriate equipment that drops from it. </li>
+					<li class="text list_item"> <b> Set Bonuses: </b> Most sets bonuses are limited to 2-3 items and are used to provide a single effect that would be too strong for a single item. </li>
+					<li class="text list_item"> <b> Spellblades: </b> Spellblades are a new weapon type that can be used by Mages, Priests, and Warlocks as these classes are no longer able to use Swords or Daggers. Spellblades have low physical damage but provide attributes and effects for casters. </li>
+					<li class="text list_item"> <b> Sockets: </b> Equipment can have sockets that are fitted with gems by the player. When socketed, gems provide unique combat benefits that are not gained from attributes. There are three socket types: Red, Green, and Blue. A gem can only be socketed into a gem socket of the same color. </li>
+					<li class="text list_item"> <b> Legendary Weapons: </b> There are a variety of Legendary weapons, with each one having multiple abilities and effects. Each class specialization has at least one Legendary they can use, with some Legendary weapons being restricted to specific classes. Legendary weapons are extraordinarily difficult to acquire, requiring the combined effort of a large, competent raiding guild for 2+ years. They may require completing difficult quests, utilizing extremely high-level craftsman, and acquiring very rare materials. A Legendary weapon will be notably better than any comparable Epic weapon and will be most class specialization's Best in Slot. </li>
+					<li class="text list_item"> <b> Armory: </b> The bank has a separate, purchasable "Armory" tab for storing armor and weapons that is organized by slot (Chest, Mainhand, Weapon Type, etc). The Armory size can be increased by purchasing extensions, similar to bank tabs. Characters can save equipment loadouts, allowing them to quickly swap between their equipped items and the equipment in the Armory while at the bank. </li>
+					<li class="text list_item"> <b> Armor Dyeing: </b> Armor can be dyed a variety of colors. Each armor piece is limited in what colors it can be dyed to preserve the game's aesthetic. Dyes are made from herbs and other reagents and crafted by the Alchemy profession. </li>
+				</ul>
+				<div class="subheader text_left"> Raids </div>
+				<ul class="list">
+					<li class="text list_item"> <b> Raid Journal: </b> The Raid Journal contains completion info about raids the player has participated in, showing how many times the player has completed each raid and defeated each individual boss. The Raid Journal is private but can be sent to other players, allowing a raid leader to check the player's raiding experience when creating raid groups. </li>
+					<li class="text list_item"> <b> Loot Distribution: </b> Raid leaders have several new or updated ways to distribute loot. </li>
+					<ul class="sub_list">
+						<li class="text list_item_narrow"> <b> Master Loot: </b> The raid leader selects what classes can roll on the item. A prompt is given to each character of that class, allowing them to roll. The rolls from each player are displayed in real-time, showing the highest rolls. After all players have either rolled or passed, the raid leader has final judgment in distributing the item. </li>
+						<li class="text list_item_narrow"> <b> Random Roll: </b> The item is given to a random player in the raid. Used for reagents and other items that have equal value to all raid members. Players can opt out of participating in random rolls. </li>
+					</ul>
+					<li class="text list_item"> <b> Catalog: </b> The Catalog records what notable items drop from each dungeon or raid boss. The Catalog starts empty and will only show bosses the player has defeated and items the player has seen drop first-hand. The drop rate of each item is represented by icons: </li>
+					<ul class="sub_list">
+						<li class="text list_item_narrow"> <b> Unlabeled (Common): </b> Greater than 30% drop rate. </li>
+						<li class="text list_item_narrow"> <b> Skull (Rare): </b> Between 15% and 30% drop rate. </li>
+						<li class="text list_item_narrow"> <b> Skull and Bones (Very Rare): </b> Between 5% and 15% drop rate. </li>
+						<li class="text list_item_narrow"> <b> Dragon Skull (Extremely Rare): </b> Less than 5% drop rate. </li>
+					</ul>
+					<img src="./static/img/elements/catalog.png" style="display: block; margin: auto; padding: 10px 0; max-width: 90%;">
+				</ul>
+				<div class="subheader text_left"> Combat </div>
+				<ul class="list">
+					<li class="text list_item"> <b> Directional Targeting: </b> The spell is cast in the target direction, centered on the caster (ex. Cone of Cold, Shockwave, Chakram). The indicator will show the distance the spell will travel and the shape of its effect. </li>
+					<li class="text list_item"> <b> Weapon Skills: </b> A character's weapon skill is represented by one of six ranks: Untrained, Amateur, Skilled, Adept, Expert, and Master. Each rank increases all damage dealt by 2% with weapons of that type. The rank 'Untrained' does not provide a benefit and is the starting rank for each weapon. Acquiring the next rank requires using the weapon in combat over an extended period of time. Obtaining Expert and Master ranks for each weapon requires completing trials set by the respective Weapon Master. </li>
+					<li class="text list_item"> <b> Addons: </b> Addons are no longer able to interact with combat elements. Combat addons can make a substantial difference in the effectiveness of a player, putting players who do not use them at a disadvantage. Due to the popularity of some addons, content must be designed around them, further increasing the gap between those who use them and those who do not. </li>
+					<li class="text list_item"> <b> Status Effects: </b> Two new status effects have been added that further categorize common effects, allowing for more complex interactions with other aspects of the game, such as spells, talents, equipment, and more. </li>
+					<ul class="sub_list">
+						<li class="text list_item_narrow"> <b> Burn: </b> A Burn status effect deals Fire damage over time. It is applied by specific Fire spells and environmental hazards (lava, campfires, etc). It is used primarily by Mages, Warlocks, and Shamans. </li>
+						<li class="text list_item_narrow"> <b> Bleed: </b> A Bleed status effect deals Physical damage over time. It is used primarily by Warriors, Rogues, Hunters, and Druids. </li>
+					</ul>
+				</ul>
+				<div class="subheader text_left"> Professions </div>
+				<ul class="list">
+					<li class="text list_item"> <b> Jewelcrafting: </b> Jewelcrafting is added to craft Rings, Amulets, Trinkets, caster Off-hands, Gems, and more. Gems typically provide static effects, such as: </li>
+					<ul class="sub_list">
+						<li class="text list_item_narrow"> Increase the duration of your Burn effects by 10%. </li>
+						<li class="text list_item_narrow"> Reduce the duration of Stun, Slow, and Immobilize effects on you by 6%. </li>
+						<li class="text list_item_narrow"> Increase your maximum Rage by 4. </li>
+						<li class="text list_item_narrow"> Increase the duration of beneficial Magic effects on you by 7%. </li>
+						<li class="text list_item_narrow"> Increase your Movement Speed by 3%. </li>
+					</ul>
+					<li class="text list_item"> <b> Alchemy: </b> There are 3 types of potions: Instant Potions, Battle Elixirs, and Titan Flasks. </li>
+					<ul class="sub_list">
+						<li class="text list_item_narrow"> <b> Instant Potions: </b> Provide an effect immediately or for a short duration (ex. Restores 600 health, Gain 200 Spell Power for 6 seconds). Some Instant Potions may share a cooldown. Instant Potions are the cheapest potions. </li>
+						<li class="text list_item_narrow"> <b> Battle Elixirs: </b> Provide a constant effect for 1 hour (ex. Increase your Haste by 5%, Gain 1,000 Armor). Only one Battle Elixir can be active at a time. Effect is lost on death. </li>
+						<li class="text list_item_narrow"> <b> Titan Flasks: </b> Provide a significant effect for 4 hours (ex. Increase your maximum Rage by 15, Regenerate 1% of your maximum health per second). Only one Titan Flask can be active at a time. Titan Flasks are the most expensive potion and their effect is not lost on death. </li>
+					</ul>
+					<li class="text list_item"> <b> Cooking: </b> All food restores a percentage of maximum health and/or Mana instead of a fixed amount. Food quality is determined by what percentage of health and/or Mana it restores, how quickly, and what buffs are provided from eating. </li>
+					<li class="text list_item"> <b>Unlimited Progression:</b> The level cap of Primary crafting professions is removed. Very powerful recipes require a profession skill higher than level 300 (ex. Sulfuron Hammer may require 325 Blacksmithing). These recipes are acquired from raids, faction reputation, and rare world drops. The most powerful recipes in the game have a 100% skillup chance regardless of profession level, allowing players to progress indefinitely. </li>
+					<li class="text list_item"> <b>Crafting for Other Players:</b> A player can craft an item for a party member if the party member has the required materials in their inventory. The party member will receive an info window showing what will be crafted, the materials required, and the cost in gold (optional) that the player is charging. If the party member accepts, the player will craft the recipe and the item will be added directly into the party member's inventory. </li>
+				</ul>
+				<div class="subheader text_left"> Social </div>
+				<ul class="list">
+					<li class="text list_item"> <b> Looking for Group: </b> Players indicate what dungeon(s) they want to do and what their role(s) is. A list of all players and their roles is shown for each dungeon, allowing a player to invite other players to start a group. Looking for Group does not automatically form groups, teleport players to dungeons, or provide additional rewards. </li>
+					<li class="text list_item"> <b> Playing Tagging: </b> A player can 'tag' another player with preset common qualities such their role(s), disposition, player skill level, professions, etc. allowing them to keep tabs on players they interact with. Tags are only visible to the player that set them. </li>
+					<li class="text list_item"> <b> Guilds: </b> Guild Banks and Calendars are added for guilds to share items and coordinate events. </li>
+				</ul>
+				<div class="subheader text_left"> Player vs Player </div>
+				<ul class="list">
+					<li class="text list_item"> <b> Party Duels: </b> A party or raid leader can challenge another party, raid, or individual to a duel. All party or raid members must accept the duel for it to begin. Defeated players are unable to interact with players still in the duel. The last party or raid with undefeated members wins. </li>
+					<li class="text list_item"> <b> Rank: </b> A player's Rank represents their skill in PvP combat, determined by their wins and losses in ranked events. Ranks are represented by a numerical value and have the following associated titles in ascending order: </li>
+					<ul class="sub_list">
+						<li class="text list_item_narrow"> <b> Horde: </b> Scout, Grunt, Stone Guard, Centurion, Legionnaire, Conqueror, Warlord </li>
+						<li class="text list_item_narrow"> <b> Alliance: </b> Private, Soldier, Knight, Sergeant, Commander, Lieutenant, Marshal </li>
+					</ul>
+					<li class="text list_item"> <b> Teams: </b> Players can form teams of 2 or 3 to compete in arenas, tournaments, and specific battlegrounds. Each team has a 'Team Rank' which is calculated from each team member's rank and is used for determining entry into ranked team events. A player can be a member of multiple teams. </li>
+					<li class="text list_item"> <b> Arenas: </b> Arenas are best of 3 rounds. Cooldowns do not reset between rounds. Skirmishes are available for unranked play. </li>
+					<li class="text list_item"> <b> Weekend Tournaments: </b> A double elimination tournament with 16 Teams of similar Team Rank from the same faction. The winning team members receive 150 gold each and honor equal to winning 5 to 10 battlegrounds. Only available on Saturday and Sunday, starting every 2 hours between 12:00 PM and 10:00 PM server time. A character can only enter one Weekend Tournament per week. All matches are best of 3 rounds. Cooldowns do not reset between rounds. </li>
+					<li class="text list_item"> <b> Grand Tournaments: </b> Every three months, a Grand Tournament is held at Booty Bay. The tournament is double elimination and open to all teams of 3 from either faction. The tournament will accept as many entrants as possible to form even brackets (128, 256, etc. teams). The teams with the highest Team Rank are chosen. The winning team receives several thousand gold and a fraction of the 60g entrance fee from each team. All matches are best of 3 rounds. Cooldowns do not reset between rounds. </li>
+					<li class="text list_item"> <b> Gurubashi Arena: </b> Gurubashi Arena is relocated into Booty Bay. The Arena hosts the Grand Tournament, showing spectators random matches from the tournament as well as the tournament's finals. The Arena is large enough to hold all other arena maps, allowing maps to be "loaded" into the Arena, providing a variety of established maps for contestants </li>
+				</ul>
+				<div class="subheader text_left"> Battlegrounds </div>
+				<ul class="list">
+					<li class="text list_item"> <b> Brackets: </b> Level brackets are replaced with dynamic matchmaking. Teams are generated such that both will have a similar power level, taking into account player level and equipment. Warsong Gulch becomes accessible at level 30, Arathi Basin at level 40, and Alterac Valley at level 50. </li>
+					<li class="text list_item"> <b> Team-Based: </b> Several new battlegrounds should be added that divide players into teams of 3 for a team-based free-for-all. Teams would battle against between 5 to 8 other teams for victory. Small teams allow for more unique gameplay as a team's composition greatly affects their gameplay and strategy. By contrast, battlegrounds with larger teams tend to have a similar distribution of each class and role, resulting in predictable gameplay and diluting the impact from each player. </li>
+					<!-- <li class="text list_item"> <b> Battle Royale: </b> A battle royale game mode that pits 25 teams of 3 against each other. The battle takes place on a large deserted jungle island. The map contains various temporary and permanent powerups, such as movement speed boosts, invisibility detection, resurrections, damage increases, and more. The map boundary shrinks periodically over 30 minutes centered on a random point, forcing all teams into the same area. Players can join as a single, party of 3, or ranked team. </li> -->
+				</ul>
+				<div class="subheader text_left"> Races </div>
+				<ul class="list">
+					<li class="text list_item"> <b> Races: </b> The Blood Elf and Draeni races are added. </li>
+					<li class="text list_item"> <b> Racial Weapons: </b> The weapon types native to each race varies. This is reflected in several ways: </li>
+					<ul class="sub_list">
+						<li class="text list_item_narrow"> <b> Quest Rewards: </b> The weapons rewarded from quests in each races' starting zones are more likely to be their races preferred weapon types. </li>
+						<li class="text list_item_narrow"> <b> Item Drops: </b> The weapons found in each races' starting zones from chests or creatures are more likely to be their races preferred weapon types. </li>
+						<li class="text list_item_narrow"> <b> Weapon Masters: </b> The Weapon Masters' required to train high level weapon skills are unique to races and gated by the character's reputation with the faction. For example, learning the 'Master' weapon skill in swords requires being taught by the Stormwind Weapon Master who only trains characters who are exalted with Stormwind. As each character is likely to gain part of the required reputation with their own race while leveling, it requires less work for a character to use the weapons preferred by their race. </li>
+					</ul>
+					<li class="text list_item"> <b> Racial Professions: </b> Profession trainers in each races' city teach recipes unique to their race. For example, Ironforge Blacksmithing trainers teach axe recipes that Stormwind trainers do not, and may require a high enough reputation with Ironforge to learn. </li>
+				</ul>
+			</div>
+		</div>
+		<div class="divider_large_up"></div>
+		<div id="page_footer">
+			<br>
+			<div class="footer_text"> This is an independent project and has no association with Blizzard Entertainment. </div>
+			<br>
+			<!-- <div class="footer_text footer_text_bold"> Contact </div>
+			<div id="contact_text" class="footer_text"> contact@worldofwarcraftreborn.com </div>  -->
+		</div>
+	</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+<!-- Load the talents and abilities for each class -->
+<script src="./static/js/druid_talents.js"></script>
+<script src="./static/js/druid_abilities.js"></script>
+
+<script src="./static/js/hunter_talents.js"></script>
+<script src="./static/js/hunter_abilities.js"></script>
+
+<script src="./static/js/mage_talents.js"></script>
+<script src="./static/js/mage_abilities.js"></script>
+
+<script src="./static/js/paladin_talents.js"></script>
+<script src="./static/js/paladin_abilities.js"></script>
+
+<script src="./static/js/priest_talents.js"></script>
+<script src="./static/js/priest_abilities.js"></script>
+
+<script src="./static/js/rogue_talents.js"></script>
+<script src="./static/js/rogue_abilities.js"></script>
+
+<script src="./static/js/shaman_talents.js"></script>
+<script src="./static/js/shaman_abilities.js"></script>
+
+<script src="./static/js/warlock_talents.js"></script>
+<script src="./static/js/warlock_abilities.js"></script>
+
+<script src="./static/js/warrior_talents.js"></script>
+<script src="./static/js/warrior_abilities.js"></script>
+
+<!-- Javascript files -->
+<script src="./static/js/equipment.js"></script>
+<script src="./static/js/reborn.js"></script>
+<script src="./static/js/class_info.js"></script>
+
+<script>
+	GenerateItemExamples();
+	//SelectClass("paladin");
+	PopulateEquipment();
+	PopulateArtifacts();
+</script>
