@@ -1,5 +1,5 @@
 ## Siegebreaker
-A desktop tower defense game made in Unity.
+A desktop tower defense game made in Unity. Currently in alpha, with a full release in early 2023.
 - [Code Examples](Siegebreaker/Code Examples)
 
 ## Reborn
