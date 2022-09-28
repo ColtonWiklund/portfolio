@@ -3,9 +3,9 @@ using UnityEngine.UI;
 
 namespace TowerDefense
 {
-	/// <summary> Functions that assist in positioning UI elements relative to the screen. </summary>
-	public static class ScreenPositioning
-	{
+    /// <summary> Functions that assist in positioning UI elements relative to the screen. </summary>
+    public static class ScreenPositioning
+    {
         /// <summary> Calculate the center position of a rect transform relative to its anchor position. </summary>
         public static Vector2 GetPositionOfRectTransform(RectTransform transform, Vector2 anchors, bool usingWorldSpace, Camera camera, CanvasScaler canvasScaler)
         {
