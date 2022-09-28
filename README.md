@@ -1,6 +1,6 @@
 ## Siegebreaker
 A desktop tower defense game made in Unity. Currently in alpha, with a full release in early 2023.
-- [Code Examples](Siegebreaker/Code Examples)
+- [Code Examples](Siegebreaker)
 
 ## Reborn
 A theoretical version of World of Warcraft based on the original game. Contains updated abilities, talents, equipment, and a new system to promote player discovery.
