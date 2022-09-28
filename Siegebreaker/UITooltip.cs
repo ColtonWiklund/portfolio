@@ -12,17 +12,17 @@ namespace TowerDefense.UI
 	/// </summary>
 	public class UITooltip : MonoBehaviour, IInitialize
 	{
-        public static UITooltip Instance;
+		public static UITooltip Instance;
 
-        [Header("Components")]
+		[Header("Components")]
 		[SerializeField] CanvasScaler _canvasScaler;    // the placement of a tooltip requires the reference resolution of the canvas
 
 		[Header("Tooltips")]
-		[SerializeField] UITooltipInfo _tooltipInfo;	// tooltip for displaying generic information
-        [SerializeField] UICard _tooltipCardUiCard;		// tooltip for displaying an ability as a card
+		[SerializeField] UITooltipInfo _tooltipInfo;    // tooltip for displaying generic information
+		[SerializeField] UICard _tooltipCardUiCard;     // tooltip for displaying an ability as a card
 
 		[Header("Delay")]
-		[SerializeField] float _showDelay;	// how long after the cursor is on the element before the tooltip is shown
+		[SerializeField] float _showDelay;  // how long after the cursor is on the element before the tooltip is shown
 		[SerializeField] float _hideDelay;  // how long after the cursor leaves the element before the tooltip is hidden
 
 		[Header("Overworld")]
@@ -31,51 +31,51 @@ namespace TowerDefense.UI
 		[Header("Boundary Padding")]
 		[SerializeField] int _boundaryPadding;  // how close to the edge of the screen the tooltip can get
 
-        private RectTransform _tooltipTransform;        // the parent transform of both tooltips (the transform this script is on)
-        private RectTransform _tooltipTransformCard;
-        private RectTransform _tooltipTransformInfo;
+		private RectTransform _tooltipTransform;        // the parent transform of both tooltips (the transform this script is on)
+		private RectTransform _tooltipTransformCard;
+		private RectTransform _tooltipTransformInfo;
 
-        private Coroutine _coroutineTooltipTransition;  // shows or hides the tooltip after a delay
-        private Camera _mainCamera;
+		private Coroutine _coroutineTooltipTransition;  // shows or hides the tooltip after a delay
+		private Camera _mainCamera;
 
 		/// <summary> The tooltip that is currently open. </summary>
 		private RectTransform OpenTooltip => _tooltipTransformInfo.gameObject.activeSelf ? _tooltipTransformInfo : _tooltipTransformCard;
 
-        /// <summary> The generic information tooltip. </summary>
-        public static UITooltipInfo Info { get; private set; }
+		/// <summary> The generic information tooltip. </summary>
+		public static UITooltipInfo Info { get; private set; }
 
-        /// <summary> The UI element the tooltip is positioned on and loading data from. </summary>
-        public ITooltip Caller { get; private set; }
+		/// <summary> The UI element the tooltip is positioned on and loading data from. </summary>
+		public ITooltip Caller { get; private set; }
 
-        // IInitialize
-        public void Initialize(Unit unit)
+		// IInitialize
+		public void Initialize(Unit unit)
 		{
 			Instance = this;
-            _mainCamera = Camera.main;
+			_mainCamera = Camera.main;
 
-            _tooltipTransform = (RectTransform)transform;
-            _tooltipTransformInfo = _tooltipInfo.GetComponent<RectTransform>();
-            _tooltipInfo.Initialize(this);
-            _tooltipTransformCard = _tooltipCardUiCard.GetComponent<RectTransform>();
+			_tooltipTransform = (RectTransform)transform;
+			_tooltipTransformInfo = _tooltipInfo.GetComponent<RectTransform>();
+			_tooltipInfo.Initialize(this);
+			_tooltipTransformCard = _tooltipCardUiCard.GetComponent<RectTransform>();
 
-            Info = _tooltipInfo;
-        }
+			Info = _tooltipInfo;
+		}
 
-        // IInitialize
-        public void Terminate() { }
+		// IInitialize
+		public void Terminate() { }
 
-        /// <summary> 
-        /// Show the Card tooltip. 
-        /// The data used by the Card UI should be loaded by chaining UICard initialization functions from this call.
-        /// </summary>
-        public UICard ShowCard(ITooltip caller)
+		/// <summary> 
+		/// Show the Card tooltip. 
+		/// The data used by the Card UI should be loaded by chaining UICard initialization functions from this call.
+		/// </summary>
+		public UICard ShowCard(ITooltip caller)
 		{
 			ShowTooltip(_tooltipTransformCard, caller);
 			return _tooltipCardUiCard;
 		}
 
-        /// <summary> Display the passed tooltip, does not have a delay if any tooltip is already open. </summary>
-        public void ShowTooltip(RectTransform tooltip, ITooltip caller)
+		/// <summary> Display the passed tooltip, does not have a delay if any tooltip is already open. </summary>
+		public void ShowTooltip(RectTransform tooltip, ITooltip caller)
 		{
 			Caller = caller;
 
@@ -113,7 +113,7 @@ namespace TowerDefense.UI
 			if (_coroutineTooltipTransition != null)
 				StopCoroutine(_coroutineTooltipTransition);
 
-            _coroutineTooltipTransition = StartCoroutine(DisplayDelay(OpenTooltip, _hideDelay, false));
+			_coroutineTooltipTransition = StartCoroutine(DisplayDelay(OpenTooltip, _hideDelay, false));
 		}
 
 		/// <summary> Hide the tooltip during this frame. </summary>
@@ -122,7 +122,7 @@ namespace TowerDefense.UI
 			if (_coroutineTooltipTransition != null)
 				StopCoroutine(_coroutineTooltipTransition);
 
-            _coroutineTooltipTransition = StartCoroutine(DisplayDelay(OpenTooltip, 0, false));
+			_coroutineTooltipTransition = StartCoroutine(DisplayDelay(OpenTooltip, 0, false));
 		}
 
 		// Add a small delay before tooltip is shown or hidden so it does not load while the mouse is quickly moving over the element
@@ -147,22 +147,22 @@ namespace TowerDefense.UI
 			// Force the tooltip to resize to fit its content immediately.
 			// Otherwise the RectTransform's size will be incorrect until the end of this frame.
 			// This requires the RectTransform's GameObject to be active (otherwise will not update)
-			
+
 			// 1 - enable the RectTransform's GameObject so it can be updated
 			bool isAlreadyOpen = tooltipRect.gameObject.activeSelf;
 			tooltipRect.gameObject.SetActive(true);
-			
+
 			// 2 - update the RectTransform's size
 			LayoutRebuilder.ForceRebuildLayoutImmediate(tooltipRect);
-			
+
 			// 3 - keep an already open tooltip open, otherwise hide it
 			if (!isAlreadyOpen) tooltipRect.gameObject.SetActive(false);
 
-            // update the shared parent anchors
-            Vector2 callerAnchors = caller.GetAnchors();
-            _tooltipTransform.anchorMin = callerAnchors;
-            _tooltipTransform.anchorMax = callerAnchors;
-            _tooltipTransform.pivot = callerAnchors;
+			// update the shared parent anchors
+			Vector2 callerAnchors = caller.GetAnchors();
+			_tooltipTransform.anchorMin = callerAnchors;
+			_tooltipTransform.anchorMax = callerAnchors;
+			_tooltipTransform.pivot = callerAnchors;
 
 			// update the tooltip or card anchors
 			tooltipRect.anchorMin = callerAnchors;
@@ -226,11 +226,11 @@ namespace TowerDefense.UI
 			_tooltipTransform.anchoredPosition = tooltipPos;
 		}
 
-        // Calculate the boundaries (in pixels) of where the tooltip can be placed, based on the tooltip size and screen resolution
-        private Vector4 GetPlacementBoundary(RectTransform tooltipRect, ITooltip caller)
+		// Calculate the boundaries (in pixels) of where the tooltip can be placed, based on the tooltip size and screen resolution
+		private Vector4 GetPlacementBoundary(RectTransform tooltipRect, ITooltip caller)
 		{
-            // X = Max X, Z = min X, Y = max Y, W = min Y
-            var boundary = new Vector4
+			// X = Max X, Z = min X, Y = max Y, W = min Y
+			var boundary = new Vector4
 			{
 				// x coordinate (x = right, z = left)
 				x = _canvasScaler.referenceResolution.x - (_canvasScaler.referenceResolution.x * caller.GetAnchors().x) - _boundaryPadding,

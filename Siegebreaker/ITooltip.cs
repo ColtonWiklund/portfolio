@@ -20,10 +20,10 @@ namespace TowerDefense.UI
         Vector2 GetAnchors();
 
         /// <summary>
-		/// A position offset from the caller's rect transform.
+        /// A position offset from the caller's rect transform.
         /// Overrides FixedOffsetFromTooltipAnchor if either the RelativeOffsetFromCaller X or Y value is not zero.
         /// Ex. Offset = (0, 180), Caller Pos = (840, 230), Tooltip Pos = (840, 410).
-		/// </summary>
+        /// </summary>
         Vector2 RelativeOffsetFromCaller();
 
         /// <summary> The rect transform of the calling element. </summary>

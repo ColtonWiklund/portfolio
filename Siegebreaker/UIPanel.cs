@@ -78,8 +78,8 @@ namespace TowerDefense.UI
 		/// <summary> Open this panel if it is closed, or close it if it is open. </summary>
 		public void TogglePanel() => TogglePanel(null);
 
-        /// <summary> Open this panel if it is closed, or close it if it is open. </summary>
-        public void TogglePanel(Object objectToLoad)
+		/// <summary> Open this panel if it is closed, or close it if it is open. </summary>
+		public void TogglePanel(Object objectToLoad)
 		{
 			if (gameObject.activeSelf)
 				ClosePanel();
@@ -107,12 +107,12 @@ namespace TowerDefense.UI
 		{
 			gameObject.SetActive(false);
 
-            // reset the panel's transform after it has been moved by the closing animation, called after the closing animation finishes.
-            var panelRect = GetComponent<RectTransform>();
-            panelRect.anchoredPosition = PanelAnchorPosition.Value;
-            panelRect.localScale = new Vector3(1f, 1f, 1f);
+			// reset the panel's transform after it has been moved by the closing animation, called after the closing animation finishes.
+			var panelRect = GetComponent<RectTransform>();
+			panelRect.anchoredPosition = PanelAnchorPosition.Value;
+			panelRect.localScale = new Vector3(1f, 1f, 1f);
 
-            OnPanelCloseFinish();
+			OnPanelCloseFinish();
 		}
 
 		/// <summary>

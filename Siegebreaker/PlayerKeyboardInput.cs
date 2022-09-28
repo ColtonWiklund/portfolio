@@ -57,11 +57,11 @@ namespace TowerDefense.Player
             }
         }
 
-		/// <summary> Called each time the player presses or releases the show card targeting info key (default: shift). </summary>
-		public static Action<bool> OnCardShowTargetingInfoAction;
+        /// <summary> Called each time the player presses or releases the show card targeting info key (default: shift). </summary>
+        public static Action<bool> OnCardShowTargetingInfoAction;
 
-		/// <summary> Returns True if the key to show card targeting info is held down </summary>
-		public static bool CardShowTargetingInfoKeyDown() => Input.GetKey(KeyCode.LeftShift);
+        /// <summary> Returns True if the key to show card targeting info is held down </summary>
+        public static bool CardShowTargetingInfoKeyDown() => Input.GetKey(KeyCode.LeftShift);
 
         // Return to Entity Selection Mode -> Close Highest Level Panel -> Open Game Menu
         private static void OnEscapeKeyPressed()

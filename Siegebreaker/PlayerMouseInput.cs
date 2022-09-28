@@ -11,14 +11,14 @@ namespace TowerDefense.Player
 		[Header("Components")]
 		[SerializeField] CameraController _cameraController;
 
-        /// <summary> All objects underneath the mouse are added to this array (this is unlikely to be more than 3-4 objects during levels with many overlapping enemies). </summary>
-        private RaycastHit[] _objectSelectionRaycastHits = new RaycastHit[8];
+		/// <summary> All objects underneath the mouse are added to this array (this is unlikely to be more than 3-4 objects during levels with many overlapping enemies). </summary>
+		private RaycastHit[] _objectSelectionRaycastHits = new RaycastHit[8];
 
 		/// <summary> Entities must have a selection collider on this layer to be hovered or selected. </summary>
 		private LayerMask _entityLayerMask;
 
-        /// <summary> Tiles must have a selection collider on this layer to be selected. </summary>
-        private LayerMask _tileLayerMask;
+		/// <summary> Tiles must have a selection collider on this layer to be selected. </summary>
+		private LayerMask _tileLayerMask;
 
 		/// <summary> The object that was under the mouse when it was left-clicked. </summary>
 		private Transform _mouseDownObject;
@@ -26,8 +26,8 @@ namespace TowerDefense.Player
 		/// <summary> The position of the mouse on the previous frame. </summary>
 		private Vector2 _lastFrameMousePos;
 
-        /// <summary> Where the mouse was positioned when mouse was left-clicked. </summary>
-        private Vector2 _mouseStartPos;
+		/// <summary> Where the mouse was positioned when mouse was left-clicked. </summary>
+		private Vector2 _mouseStartPos;
 
 		/// <summary> How many pixels away from the screen edge the mouse must be to edge pan. </summary>
 		private static readonly int _edgePanningPixelMargin = 5;
@@ -35,15 +35,15 @@ namespace TowerDefense.Player
 		/// <summary> How much the mouse can move while pressed down in any direction (% of screen dimension) from its starting position and still trigger a selection event. </summary>
 		private static readonly float _mouseMovementTolerance = 0.0125f;
 
-        /// <summary> Has the mouse moved between ButtonDown and ButtonUp? Set to True if the mouse movement exceeds _mouseMovementTolerance. </summary>
-        private bool _mouseHasMoved;
+		/// <summary> Has the mouse moved between ButtonDown and ButtonUp? Set to True if the mouse movement exceeds _mouseMovementTolerance. </summary>
+		private bool _mouseHasMoved;
 
 		/// <summary> Was ButtonDown called while the mouse was over a UI element? </summary>
 		private bool _mouseStartedOverUI;
 
-        private SelectionType SelectionMode => PlayerSelection.SelectionMode;
+		private SelectionType SelectionMode => PlayerSelection.SelectionMode;
 
-        public static PlayerMouseInput Instance { get; private set; }
+		public static PlayerMouseInput Instance { get; private set; }
 
 		private void Awake()
 		{
@@ -67,7 +67,7 @@ namespace TowerDefense.Player
 			// only enable hover when the mouse isn't over the UI
 			var newEntity = !IsMouseOverUI() ? GetObjectUnderMouse() : null;
 			PlayerSelection.OnHover(newEntity);
-        }
+		}
 
 		/// <summary> Select Entities when clicked on and pan camera when clicking and dragging. </summary>
 		private void MouseLeftClickInput()
@@ -82,7 +82,7 @@ namespace TowerDefense.Player
 				_mouseStartedOverUI = IsMouseOverUI();
 				_mouseHasMoved = false;
 				_mouseStartPos = _lastFrameMousePos;
-            }
+			}
 			// mouse click hold
 			else if (Input.GetMouseButton(0))
 			{
@@ -93,7 +93,7 @@ namespace TowerDefense.Player
 				// check if the mouse movement has exceeded the selection tolerance
 				if (!_mouseHasMoved && currentFrameMousePos != _lastFrameMousePos)
 					if (Vector2.Distance(currentFrameMousePos, _mouseStartPos) > _mouseMovementTolerance)
-                        _mouseHasMoved = true;
+						_mouseHasMoved = true;
 
 				_cameraController.PanCameraDrag(currentFrameMousePos, _lastFrameMousePos);
 				_lastFrameMousePos = currentFrameMousePos;
@@ -110,8 +110,8 @@ namespace TowerDefense.Player
 					Transform mouseUpEntity = GetObjectUnderMouse();
 					if (mouseUpEntity == null)
 					{
-                        // if all panels were closed, reset the selected Entity
-                        if (UIPanelController.CloseHighestLayerPanel())
+						// if all panels were closed, reset the selected Entity
+						if (UIPanelController.CloseHighestLayerPanel())
 							PlayerSelection.ClearSelection();
 					}
 					// select the Entity
@@ -126,23 +126,23 @@ namespace TowerDefense.Player
 		/// <summary> Right-clicking either resets the selection mode or raises a right-click event on an entity. </summary>
 		private void MouseRightClickInput()
 		{
-            // when not in entity selection mode, right-clicking returns to normal selection mode
-            if (SelectionMode != SelectionType.Entity && Input.GetMouseButtonUp(1))
-            {
-                PlayerSelection.EnterEntitySelectionMode();
-            }
-            // while in entity selection mode, process right-clicked enemies
-            else if (SelectionMode == SelectionType.Entity && Input.GetMouseButtonDown(1))
-            {
+			// when not in entity selection mode, right-clicking returns to normal selection mode
+			if (SelectionMode != SelectionType.Entity && Input.GetMouseButtonUp(1))
+			{
+				PlayerSelection.EnterEntitySelectionMode();
+			}
+			// while in entity selection mode, process right-clicked enemies
+			else if (SelectionMode == SelectionType.Entity && Input.GetMouseButtonDown(1))
+			{
 				if (IsMouseOverUI()) return;
-                var entityUnderMouse = GetObjectUnderMouse();
-                PlayerSelection.OnEntityRightClicked(entityUnderMouse);
-            }
-        }
+				var entityUnderMouse = GetObjectUnderMouse();
+				PlayerSelection.OnEntityRightClicked(entityUnderMouse);
+			}
+		}
 
-        /// <summary> Handles panning the camera when the cursor is at the screen's borders. Called by the CameraController. </summary>
-        public static Vector2Int MouseEdgePanCamera()
-        {
+		/// <summary> Handles panning the camera when the cursor is at the screen's borders. Called by the CameraController. </summary>
+		public static Vector2Int MouseEdgePanCamera()
+		{
 			var mousePos = Input.mousePosition;
 			int panVertical = 0, panHorizontal = 0;
 
@@ -151,11 +151,11 @@ namespace TowerDefense.Player
 			return new Vector2Int(0, 0);
 #endif
 
-            // disable unreachable code warning
+			// disable unreachable code warning
 #pragma warning disable CS0162
 
-            // determine if the camera should be panning
-            if (mousePos.x >= 0 && mousePos.x < _edgePanningPixelMargin)
+			// determine if the camera should be panning
+			if (mousePos.x >= 0 && mousePos.x < _edgePanningPixelMargin)
 				panHorizontal = -1;
 			else if (mousePos.x > Screen.width - _edgePanningPixelMargin && mousePos.x <= Screen.width)
 				panHorizontal = 1;
@@ -197,14 +197,14 @@ namespace TowerDefense.Player
 
 			// find all entities underneath the mouse
 			var layerMask = SelectionMode == SelectionType.Tile ? _tileLayerMask : _entityLayerMask;
-            int entitiesUnderMouseCount = Physics.RaycastNonAlloc(ray, _objectSelectionRaycastHits, 100f, layerMask);
+			int entitiesUnderMouseCount = Physics.RaycastNonAlloc(ray, _objectSelectionRaycastHits, 100f, layerMask);
 
 			if (entitiesUnderMouseCount == 0) return null;
 
-            // find the entity whose contact point from this ray is closest to its position
-            (Collider entityCollider, float percentOfMaxHitDistance) entityClosestToRaycast = (null, 0);
-            for (int i = 0; i < entitiesUnderMouseCount; i++)
-            {
+			// find the entity whose contact point from this ray is closest to its position
+			(Collider entityCollider, float percentOfMaxHitDistance) entityClosestToRaycast = (null, 0);
+			for (int i = 0; i < entitiesUnderMouseCount; i++)
+			{
 				// get the distance from where the hit occured to the collider's center
 				var hitCollider = _objectSelectionRaycastHits[i].collider;
 				float hitDistanceToColliderCenter = Vector3.Distance(_objectSelectionRaycastHits[i].point, hitCollider.bounds.center);
@@ -223,7 +223,7 @@ namespace TowerDefense.Player
 				//Debug.Log("Distance to Center: " + hitDistanceToColliderCenter + ", Max Distance" + Mathf.Sqrt(maxHitDistanceToOrigin) + ", Percent of Max Hit: " + percentOfMaxHitDistance);
 				if (entityClosestToRaycast.entityCollider == null || percentOfMaxHitDistance < entityClosestToRaycast.percentOfMaxHitDistance)
 					entityClosestToRaycast = (_objectSelectionRaycastHits[i].collider, percentOfMaxHitDistance);
-            }
+			}
 
 			return entityClosestToRaycast.entityCollider.GetComponent<EntityCollider>().Root;
 		}
