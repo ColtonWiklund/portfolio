@@ -6,8 +6,8 @@ A desktop tower defense game made in Unity. Currently in alpha, with a full rele
 A theoretical version of World of Warcraft based on the original game. Contains updated abilities, talents, and equipment.
 
 - [Website](https://coltonwiklund.github.io/)
-- [Code Example](Reborn/static/js/reborn.js)
-- [Source](Reborn)
+- [Code Example](https://github.com/ColtonWiklund/ColtonWiklund.github.io/blob/master/static/js/reborn.js)
+- [Source](https://github.com/ColtonWiklund/ColtonWiklund.github.io/tree/master/static)
 
 ## Hero Arena
 A Dota 2 custom game written in Lua and published on the steam workshop.
