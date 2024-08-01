@@ -36,10 +36,10 @@ namespace TowerDefense.Player
         private static readonly float _mouseMovementTolerance = 0.0125f;
 
         /// <summary> Has the mouse moved between ButtonDown and ButtonUp? Set to True if the mouse movement exceeds _mouseMovementTolerance. </summary>
-        private bool _mouseHasMoved;
+        private bool _hasMouseMoved;
 
         /// <summary> Was ButtonDown called while the mouse was over a UI element? </summary>
-        private bool _mouseStartedOverUI;
+        private bool _didMouseClickStartOverUI;
 
         private SelectionType SelectionMode => PlayerSelection.SelectionMode;
 
@@ -79,21 +79,21 @@ namespace TowerDefense.Player
                 _lastFrameMousePos = GetNormalizedMousePos();
 
                 // if a click started over the UI, prevent it from interacting with the world
-                _mouseStartedOverUI = IsMouseOverUI();
-                _mouseHasMoved = false;
+                _didMouseClickStartOverUI = IsMouseOverUI();
+                _hasMouseMoved = false;
                 _mouseStartPos = _lastFrameMousePos;
             }
             // mouse click hold
             else if (Input.GetMouseButton(0))
             {
-                if (_mouseStartedOverUI) return;
+                if (_didMouseClickStartOverUI) return;
 
                 Vector2 currentFrameMousePos = GetNormalizedMousePos();
 
                 // check if the mouse movement has exceeded the selection tolerance
-                if (!_mouseHasMoved && currentFrameMousePos != _lastFrameMousePos)
+                if (!_hasMouseMoved && currentFrameMousePos != _lastFrameMousePos)
                     if (Vector2.Distance(currentFrameMousePos, _mouseStartPos) > _mouseMovementTolerance)
-                        _mouseHasMoved = true;
+                        _hasMouseMoved = true;
 
                 _cameraController.PanCameraDrag(currentFrameMousePos, _lastFrameMousePos);
                 _lastFrameMousePos = currentFrameMousePos;
@@ -101,24 +101,22 @@ namespace TowerDefense.Player
             // mouse click up
             else if (Input.GetMouseButtonUp(0))
             {
-                if (_mouseStartedOverUI) return;
+                if (_didMouseClickStartOverUI) return;
 
-                // objects can only be interacted with if the mouse has not moved
-                if (_mouseHasMoved == false)
+                // objects can only be interacted with if the mouse has not moved this frame
+                if (_hasMouseMoved) return;
+                
+                Transform mouseUpEntity = GetObjectUnderMouse();
+                if (mouseUpEntity == null)
                 {
-                    // close the highest layer panel if no object was selected
-                    Transform mouseUpEntity = GetObjectUnderMouse();
-                    if (mouseUpEntity == null)
-                    {
-                        // if all panels were closed, reset the selected Entity
-                        if (UIPanelController.CloseHighestLayerPanel())
-                            PlayerSelection.ClearSelection();
-                    }
-                    // select the Entity
-                    else if (mouseUpEntity == _mouseDownObject)
-                    {
-                        PlayerSelection.ProcessSelection(mouseUpEntity);
-                    }
+                    // if all panels were closed, reset the selected Entity
+                    if (UIPanelController.CloseHighestLayerPanel())
+                        PlayerSelection.ClearSelection();
+                }
+                // select the Entity
+                else if (mouseUpEntity == _mouseDownObject)
+                {
+                    PlayerSelection.ProcessSelection(mouseUpEntity);
                 }
             }
         }
@@ -201,7 +199,7 @@ namespace TowerDefense.Player
 
             if (entitiesUnderMouseCount == 0) return null;
 
-            // find the entity whose contact point from this ray is closest to its position
+            // find the entity whose contact point from this ray is closest to its center
             (Collider entityCollider, float percentOfMaxHitDistance) entityClosestToRaycast = (null, 0);
             for (int i = 0; i < entitiesUnderMouseCount; i++)
             {
@@ -220,7 +218,6 @@ namespace TowerDefense.Player
                 // (ex. hit distance to center = 0.75, max hit distance = 1.2, percent of max hit = 62.5%)
                 var percentOfMaxHitDistance = hitDistanceToColliderCenter * hitDistanceToColliderCenter / maxHitDistanceToOrigin;
 
-                //Debug.Log("Distance to Center: " + hitDistanceToColliderCenter + ", Max Distance" + Mathf.Sqrt(maxHitDistanceToOrigin) + ", Percent of Max Hit: " + percentOfMaxHitDistance);
                 if (entityClosestToRaycast.entityCollider == null || percentOfMaxHitDistance < entityClosestToRaycast.percentOfMaxHitDistance)
                     entityClosestToRaycast = (_objectSelectionRaycastHits[i].collider, percentOfMaxHitDistance);
             }

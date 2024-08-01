@@ -1,1 +1,0 @@
-modifier_round_draw = class({})
