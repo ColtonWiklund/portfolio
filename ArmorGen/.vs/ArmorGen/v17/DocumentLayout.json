@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Colton\\source\\repos\\ArmorGen\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B15DE510-BBFA-4A0C-8843-21A51A84E573}|ArmorGen.csproj|c:\\users\\colton\\source\\repos\\armorgen\\viewmodels\\mainviewwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B15DE510-BBFA-4A0C-8843-21A51A84E573}|ArmorGen.csproj|solutionrelative:viewmodels\\mainviewwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B15DE510-BBFA-4A0C-8843-21A51A84E573}|ArmorGen.csproj|c:\\users\\colton\\source\\repos\\armorgen\\models\\characterattributegroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B15DE510-BBFA-4A0C-8843-21A51A84E573}|ArmorGen.csproj|solutionrelative:models\\characterattributegroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B15DE510-BBFA-4A0C-8843-21A51A84E573}|ArmorGen.csproj|c:\\users\\colton\\source\\repos\\armorgen\\models\\characterattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B15DE510-BBFA-4A0C-8843-21A51A84E573}|ArmorGen.csproj|solutionrelative:models\\characterattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B15DE510-BBFA-4A0C-8843-21A51A84E573}|ArmorGen.csproj|c:\\users\\colton\\source\\repos\\armorgen\\models\\armoritem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B15DE510-BBFA-4A0C-8843-21A51A84E573}|ArmorGen.csproj|solutionrelative:models\\armoritem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B15DE510-BBFA-4A0C-8843-21A51A84E573}|ArmorGen.csproj|c:\\users\\colton\\source\\repos\\armorgen\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B15DE510-BBFA-4A0C-8843-21A51A84E573}|ArmorGen.csproj|solutionrelative:views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainViewWindow.cs",
+              "DocumentMoniker": "C:\\Users\\Colton\\source\\repos\\ArmorGen\\ViewModels\\MainViewWindow.cs",
+              "RelativeDocumentMoniker": "ViewModels\\MainViewWindow.cs",
+              "ToolTip": "C:\\Users\\Colton\\source\\repos\\ArmorGen\\ViewModels\\MainViewWindow.cs",
+              "RelativeToolTip": "ViewModels\\MainViewWindow.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T22:31:59.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CharacterAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\Colton\\source\\repos\\ArmorGen\\Models\\CharacterAttribute.cs",
+              "RelativeDocumentMoniker": "Models\\CharacterAttribute.cs",
+              "ToolTip": "C:\\Users\\Colton\\source\\repos\\ArmorGen\\Models\\CharacterAttribute.cs",
+              "RelativeToolTip": "Models\\CharacterAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T22:31:46.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ArmorItem.cs",
+              "DocumentMoniker": "C:\\Users\\Colton\\source\\repos\\ArmorGen\\Models\\ArmorItem.cs",
+              "RelativeDocumentMoniker": "Models\\ArmorItem.cs",
+              "ToolTip": "C:\\Users\\Colton\\source\\repos\\ArmorGen\\Models\\ArmorItem.cs",
+              "RelativeToolTip": "Models\\ArmorItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T22:31:34.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CharacterAttributeGroup.cs",
+              "DocumentMoniker": "C:\\Users\\Colton\\source\\repos\\ArmorGen\\Models\\CharacterAttributeGroup.cs",
+              "RelativeDocumentMoniker": "Models\\CharacterAttributeGroup.cs",
+              "ToolTip": "C:\\Users\\Colton\\source\\repos\\ArmorGen\\Models\\CharacterAttributeGroup.cs",
+              "RelativeToolTip": "Models\\CharacterAttributeGroup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T22:31:01.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Colton\\source\\repos\\ArmorGen\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Views\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Colton\\source\\repos\\ArmorGen\\Views\\MainWindow.xaml",
+              "RelativeToolTip": "Views\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-04T22:29:24.962Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

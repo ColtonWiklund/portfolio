@@ -59,7 +59,6 @@ namespace TowerDefense
             _sfxRegister.Clear();
             _sfxRecentlyPlayed.Clear();
             _sfxNoLongerRecentlyPlayed.Clear();
-            _sfxRecentlyPlayed.Clear();
 
             // set to 0 on Awake before setting to the correct volume in Start
             // (prevents the volume from being louder than set by the player when a scene loads)
